@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+  .contact{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+ 
+
+
+/*nav*/
+nav{
+    height: 80px;
+    width:100%;
+    background-color: white;
+    overflow: hidden;
+    position:sticky;
+    top:0;
+    border-bottom: rgb(170, 206, 206) solid 2px;  
+}
+
+.logo a{
+    border:none;
+    text-decoration: none;
+     color: rgb(30, 101, 117); 
+}
+
+  label.logo {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    color: rgb(30, 101, 117); 
+    text-decoration: none;
+    padding: 0 60px;
+    line-height: 80px;
+    border:none;
+  }
+
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav ul a{
+    color: rgb(170, 206, 206);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+nav #icon{
+    color: rgb(30, 101, 117); 
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    display:none;
+    cursor: pointer;
+}
+
+
+
+li a.active,li a:hover{
+    border: 1px solid rgb(170, 206, 206);
+    transition: .5s;
+}
+
+   /* end nav */
+
+
+
+
+
+
+   @media  (max-width: 1048px) {
+    label.logo{
+        font-size:32px;
+        padding-left:40px;
+    }
+  
+    nav ul{
+        margin-right:20px;
+    }
+  
+    nav ul a{
+        font-size:17px;
+    }
+  }
+  
+  @media  (max-width: 909px) {
+    nav #icon{
+        display: block;
+        color: rgb(30, 101, 117);
+    }
+  
+    nav ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background: white;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+  
+    nav li {
+        display: block;
+        margin:50px 0;
+        line-height:30px;
+    }
+  
+    nav li a{
+        font-size: 20px ;
+    }
+  
+    li a.active,li a:hover{
+        border: none;
+        color: rgb(30, 101, 117); 
+    }
+  
+    nav ul.show{
+        left:0;
+  
+    }
+    h1{
+      font-size:40px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  
+    h1{
+      font-size:40px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    label.logo{
+         font-size: 25px;
+         padding: 0 30px;
+     }
+  
+     nav #icon{
+      font-size: 30px;
+      margin-right: 25px;
+     }
+  
+    nav ul a{
+      font-size: 15px;
+  }
+  
+  h1{
+    font-size:20px;
+  }
+  }

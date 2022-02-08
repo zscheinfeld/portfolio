@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+    scroll-behavior: smooth;  
+}
+
+body{
+    background-image: linear-gradient(to bottom right, rgb(226, 240, 240), rgb(139, 190, 190));
+    overflow-y: hidden; 
+    
+}
+
+.text{
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    height: 100vh;
+    text-align: center;
+}
+
+h1{
+    font-size: 125px;
+    color: rgb(30, 101, 117);
+    font-family:'Rubik', sans-serif;;
+    margin-top: 20%;
+    text-transform:uppercase;
+    padding:30px;
+    animation-name: fade-bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 2s;
+     transform-origin: bottom;
+}
+
+h2{
+    font-size: 40px;
+    color: rgba(42, 136, 156, 0.6);
+    font-family: 'Montserrat', sans-serif;
+    animation-name:fadein ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+}
+  
+.enter-button{
+    color: rgb(255, 255, 255);
+    padding:3%;
+    text-decoration: none;
+    animation-name:fadein ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color:rgb(30, 101, 117);
+}
+
+a:hover{
+    color: rgb(255, 106, 78, .8);
+}
+
+
+ 
+@keyframes fade-bounce {
+    0%   { transform: scale(1,1)      translateY(0); opacity: 0; }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0);opacity: 1 }
+}
+
+@keyframes fadein {
+    0%{
+       opacity: 0%;
+    }
+
+    50%{
+       opacity: 50%;
+    }
+    100%{
+       opacity: 100%;
+    }
+  }
+
+@media screen and (max-width: 780px) {
+
+    .text{
+        display:list-item;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    h1{
+        font-size: 87px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .text{
+        display:list-item;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    a{
+        font-size: 10px;
+}
+}
