@@ -1,0 +1,551 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+    background-color: black;   
+}
+
+body{
+    /* cursor: none; */
+}
+
+.mouse{
+    background-color: white;
+    position: fixed;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+.bgbuttonwhite{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid black;
+    /* cursor: pointer; */
+}
+
+.bgbuttonwhite:hover{
+   height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 100px;
+    border: 2px solid white;
+    /* cursor: pointer; */
+}
+
+
+.bgbuttonblack{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 100px;
+    border: 2px solid white;
+    /* cursor: pointer; */
+}
+
+.bgbuttonblack:hover{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid black;
+    /* cursor: pointer; */
+}
+
+.buttonhalf{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0px;
+    border: 2px solid white;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+.bgbuttonhalftop{
+    height: 16px;
+    width: 8px;
+    background-color: white;
+    border-radius: 16px 0px 0px 16px;
+    /* cursor: pointer; */
+    
+}
+
+.bgbuttonhalfbottom{
+    height: 16px;
+    width: 8px;
+    background-color: black;
+    border-radius: 0px 16px 16px 0px;
+    /* cursor: pointer; */
+   
+}
+
+.bgbuttons{
+    display: flex;
+    gap:10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 8;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.columnitemtext{
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.p5bgclass{
+    z-index: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /* width: 100vw;
+    height: 100vh;  */
+    /* cursor: none; */
+    mix-blend-mode: difference;
+    pointer-events: none;
+    display: none;
+}
+
+.bgspace{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: transparent;
+}
+
+.bggrid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 0;
+    background-color: #68FF80;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+}
+
+
+
+.container{
+    padding: 30px;
+    width: 50%;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 24px;
+    background-color: #68FF80;
+}
+
+.bggrid2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0px;
+    flex-direction: column;
+}
+
+.topnav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    justify-content: space-between;
+    /* background-color: #68FF80; */
+    align-items: center;
+}
+
+.navright{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    /* background-color: #68FF80; */
+ 
+    /* border-radius: 50%; */
+}
+
+.navright:hover{
+    cursor: pointer;
+    color: #68FF80;
+}
+
+.navleft{
+    color: white;
+    cursor: pointer;
+    /* background-color: #68FF80; */
+}
+
+.navleft:hover{
+    color:  #68FF80;
+    cursor: pointer;
+    /* background-color: #68FF80; */
+}
+
+.navmiddle{
+    
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.tags{
+    
+    /* padding-top: 30px; */
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+    background-color: transparent;
+    
+
+}
+
+.tag{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    border: solid 2px white ;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.tag:hover{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    /* cursor: pointer; */
+}
+
+.tagselect{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: solid 2px white ;
+    cursor: pointer;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    -moz-transition: padding-right, padding-left .1s ease-in-out;
+    -o-transition: padding-right, padding-left  .1s ease-in-out;
+    -webkit-transition: padding-right, padding-left  .1s ease-in-out;
+    transition: padding-right, padding-left  .1s ease-in-out;
+ 
+}
+
+
+.columns{
+    margin-top: 24px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;   
+    gap: 10px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.leftcolumn{
+    flex: 1 1 25%;
+    border-top: solid 2px white ;
+    overflow-y: scroll;
+    /* height: 80vh; */
+    background-color: transparent;
+    background-blend-mode: difference;
+    /* cursor: pointer; */
+}
+
+
+.rightcolumns{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    /* height: 80vh; */
+    background-color: transparent;
+    z-index: 8;
+    /* gap: 10px; */
+    /* cursor: pointer; */
+}
+
+.rightgrid{
+    flex: 75%;
+    display: flex;
+    gap: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
+.columnitem{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px white ;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    mix-blend-mode: difference;
+    cursor: pointer;
+}
+
+.slideshowimage{
+    width: 100%
+}
+
+.slideshowimage img{
+    width: 100%
+
+}
+
+.descriptionitem{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px white ;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    mix-blend-mode: difference;
+}
+
+.caption{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 2px white ;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    display: none;
+}
+
+.link{
+    padding-top: 20px;
+}
+
+.link a{
+    color: #68FF80;
+    text-decoration: none;
+}
+
+.link a:hover{
+    color: white;
+}
+
+.captiontags{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: inline-block;
+    background-color: transparent;
+    width: 100%;
+}
+
+.descriptionitemtext{
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.columnitem:hover{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+
+.columnitemextrascroll{
+    height:500vh;
+    width: 100%;
+}
+
+.columnitemhighlight{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px white ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnlabel{
+    background-color: black;
+    color: white;
+}
+
+.columnlabel:hover{
+    background-color: white;
+    color: black;
+}
+
+.columnimage{
+    position: relative;
+    margin-bottom: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.columnimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+    
+}
+
+.arrows{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    
+}
+
+.hidearrow{
+    display: none;
+}
+
+.leftclick{
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    cursor: w-resize;
+}
+
+.rightclick{
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    cursor: e-resize;
+}
+
+@media screen and (max-width:720px) {
+
+    .columns{
+        margin-top: 0px;
+
+    }
+
+    .rightgrid{
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        gap: 0px;
+    }
+
+    .leftcolumn{
+        flex: 50%;
+    }
+
+    .rightcolumns{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        z-index: 8;
+        height: auto;
+        overflow-y: visible;
+    }
+
+    .tags{
+        display: none;
+    }
+
+    .columnitem{
+        font-family: 'Inter', sans-serif;
+        line-height: 140%;
+        font-size: 16px;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 2px white ;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        mix-blend-mode: difference;
+        cursor: pointer;
+    }
+
+    .container{
+        padding: 30px;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        line-height: 150%;
+        font-size: 16px;
+        background-color: #68FF80;
+    }
+    
+
+    }
