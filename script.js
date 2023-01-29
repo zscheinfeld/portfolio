@@ -240,25 +240,11 @@ $.getJSON("projects.json", function(grid) {
     var resetmode = 0;
 
     $("#projectreset").click(function(){
-        if (resetmode == 0){
-            // $(".bgspace").show();
-            // $(".bggrid").show();
-            // $(window).scrollTop(scrolltoheight)
-            $("html, body").animate({ scrollTop: scrolltoheight},1050, "swing");
-            setTimeout(() => {
-            $(".bgspace").hide();
-            $(".bggrid").hide();
-            resetmode = 1
-        }, "1100")
-
-        }
-
-        else{
+        function gridreset(){
             $(".arrows").addClass("hidearrow");
             slideshow = 0
             slideno = 0
             var selection = "#"+`${clicked}`
-    
             $("#"+`${clicked}`).children().attr('src',`${grid[clickedno-1].image}`)
             $( ".rightcolumns" ).each(function(i) {
                 if($(this).attr('id')== parentid){
@@ -291,6 +277,38 @@ $.getJSON("projects.json", function(grid) {
                 $(this).hide()
               });
         }
+        if (resetmode == 0){
+            console.log("reset 0")
+            // $(".bgspace").show();
+            // $(".bggrid").show();
+            // $(window).scrollTop(scrolltoheight)
+            $("html, body").animate({ scrollTop: scrolltoheight},1050, "swing");
+            setTimeout(() => {
+            $(".bgspace").hide();
+            $(".bggrid").hide();
+            resetmode = 1
+        }, "1100")
+
+        }
+
+        else if(resetmode == 1){
+            gridreset();
+
+            }
+           
+
+        // if reset mode = 2 (AKA tags have been activated)
+
+        else if(resetmode = 2){
+            turnedontagsarray =[]
+            projectarray = [];
+            detachedprojectarray = [];
+            columncounter = 1;
+            tagson= 0; 
+            
+        }
+
+        // if reset mode = 3 (full grid, nothing happens)
 
     
     })
@@ -320,6 +338,7 @@ $.getJSON("projects.json", function(grid) {
     var tagson= 0; 
     
     $(".tag").click(function(){    
+        resetmode = 2
         var turnedonprojects = []
         tagson = tagson + 1 
 
@@ -397,7 +416,7 @@ $.getJSON("projects.json", function(grid) {
                 setTimeout(() => {
                     $(".bggrid").hide();
                     $(".bgspace").hide();
-                    resetmode = 0;
+                    resetmode = 1;
                 }, "700")
             }
             else{

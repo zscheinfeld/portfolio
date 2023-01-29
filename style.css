@@ -305,6 +305,8 @@ body{
     /* height: 80vh; */
     background-color: transparent;
     z-index: 8;
+    flex:1;
+    
     /* gap: 10px; */
     /* cursor: pointer; */
 }
@@ -313,6 +315,7 @@ body{
     flex: 75%;
     display: flex;
     gap: 10px;
+
 }
 
 ::-webkit-scrollbar {
