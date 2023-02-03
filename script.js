@@ -66,9 +66,7 @@ $.getJSON("projects.json", function(grid) {
             column1 +=  
             `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows" ><div class="leftclick"></div><div class="rightclick"></div></div>
-            <a href='#${project.item}'>
             <img src= ${project.image}>
-            </a>
             </div>`
         }
 
@@ -76,9 +74,7 @@ $.getJSON("projects.json", function(grid) {
             column2 +=  
            `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows"><div class="leftclick"></div><div class="rightclick"></div></div>
-            <a href='#${project.item}'>
             <img src= ${project.image}>
-            </a>
             </div>`
         }
 
@@ -86,9 +82,7 @@ $.getJSON("projects.json", function(grid) {
             column3 +=  
             `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows"><div class="leftclick"></div><div class="rightclick"></div></div>
-            <a href='#${project.item}'>
             <img src= ${project.image}>
-            </a>
             </div>`
         }
         
@@ -143,7 +137,7 @@ $.getJSON("projects.json", function(grid) {
         
         $( ".columnimage" ).each(function(i) {
             if ($(this).attr('id')== clicked){
-                $(':nth-child(2)', this).children().attr('src',`${grid[clickedno-1].images[slideno]}`)
+                $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
             }
             else{
                 $(this).hide()
