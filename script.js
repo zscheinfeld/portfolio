@@ -67,6 +67,7 @@ $.getJSON("projects.json", function(grid) {
             `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows" ><div class="leftclick"></div><div class="rightclick"></div></div>
             <img src= ${project.image}>
+            <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
         }
 
@@ -75,6 +76,7 @@ $.getJSON("projects.json", function(grid) {
            `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows"><div class="leftclick"></div><div class="rightclick"></div></div>
             <img src= ${project.image}>
+            <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
         }
 
@@ -83,6 +85,7 @@ $.getJSON("projects.json", function(grid) {
             `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows"><div class="leftclick"></div><div class="rightclick"></div></div>
             <img src= ${project.image}>
+            <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
         }
         
@@ -128,12 +131,21 @@ $.getJSON("projects.json", function(grid) {
     var clickedno;
 
     $(".columnimage").on("click", function(){
+
+        if ($(window).width() <720){
+            $(".columns").css({"flex-direction": "column-reverse"});
+            $(".rightgrid").css({"flex":"auto", "height":"min-content"})
+            // $(".leftcolumn").css({"flex":"auto", "height":"min-content"})
+           
+        }
+
+
         slideshow = 1
         clicked = $(this).attr('id')
         clickedno = clicked.slice(-2)
         parentid = $(this).parent().attr('id')
-
         $(".arrows").removeClass("hidearrow");
+        $(".slidecount").removeClass("hidecount");
         
         $( ".columnimage" ).each(function(i) {
             if ($(this).attr('id')== clicked){
@@ -172,15 +184,24 @@ $.getJSON("projects.json", function(grid) {
           });
         if (slideno == grid[clickedno-1].images.length - 1){
             slideno = 0
+            $(".currentslide").html(grid[clickedno-1].images.length)
+            $(".totalslide").html(grid[clickedno-1].images.length)
         }
         else{
             slideno = slideno + 1
+            $(".currentslide").html(slideno)
+            $(".totalslide").html(grid[clickedno-1].images.length)
         }
+        
 
     })
 
     $(".columnitem").click(function(){
-        console.log("clicked")
+        $(".slidecount").removeClass("hidecount");
+        if ($(window).width() <720){
+            $(".columns").css({"flex-direction": "column-reverse"});
+           
+        }
         slideshow = 1
         clicked = $(this).attr('id')
         clickedno = clicked.slice(-2)
@@ -235,8 +256,16 @@ $.getJSON("projects.json", function(grid) {
     var resetmode = 0;
 
     function exitslideshow(){
+        if ($(window).width() <720){
+            $(".columns").css({"flex-direction": "row"});
+            $(".rightgrid").css({"flex":"50%", "height":"auto"})
+            $(".leftcolumn").css({"flex":"50%"})
+            
+           
+        }
         console.log("cicked")
         $(".arrows").addClass("hidearrow");
+        $(".slidecount").addClass("hidecount");
         slideshow = 0
         slideno = 0
         var selection = "#"+`${clicked}`
@@ -302,7 +331,10 @@ $.getJSON("projects.json", function(grid) {
         }
 
         else if (resetmode == 2){
-            exitslideshow();
+            // completely reset
+            if (slideshow == 1){
+                exitslideshow();
+            }
             columncounter = 1;
             console.log(projectarray)
             detachedprojectarray = $(".rightcolumns").children().detach()

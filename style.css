@@ -177,9 +177,13 @@ body{
     align-items: center;
     color: white;
     cursor: pointer;
-    /* background-color: #68FF80; */
+    padding-left: 30px;
  
     /* border-radius: 50%; */
+}
+
+.leftmenu{
+    display: flex;
 }
 
 .navright:hover{
@@ -471,7 +475,27 @@ body{
     position: absolute;
     background-color: transparent;
     display: flex;
-    
+}
+
+.slidecount{
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.currentslide{
+    display: inline;
+}
+
+.totalslide{
+    display: inline;
+}
+
+.hidecount{
+    display: none;
 }
 
 .hidearrow{
