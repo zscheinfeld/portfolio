@@ -65,6 +65,8 @@ $.getJSON("projects.json", function(grid) {
             `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows" ><div class="leftclick"><div class="leftarrow"><</div></div><div class="rightclick"><div class="rightarrow">></div></div></div>
             <img src= ${project.image}>
+            <iframe class ="iframeclass" ></iframe>
+            <video class ="viddisplay" autoplay loop width='100%' height="auto"> <source type="video/mp4"></video>
             <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
         }
@@ -74,6 +76,8 @@ $.getJSON("projects.json", function(grid) {
            `<div class="columnimage" id="image${project.item}">
            <div class="hidearrow arrows" ><div class="leftclick"><div class="leftarrow"><</div></div><div class="rightclick"><div class="rightarrow">></div></div></div>
             <img src= ${project.image}>
+            <iframe class ="iframeclass"></iframe>
+            <video class ="viddisplay" autoplay  loop width='100%' height="auto"> <source type="video/mp4"></video>
             <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
         }
@@ -83,6 +87,8 @@ $.getJSON("projects.json", function(grid) {
             `<div class="columnimage" id="image${project.item}">
             <div class="hidearrow arrows" ><div class="leftclick"><div class="leftarrow"><</div></div><div class="rightclick"><div class="rightarrow">></div></div></div>
             <img src= ${project.image}>
+            <iframe class ="iframeclass"></iframe>
+            <video class ="viddisplay" autoplay  loop width='100%' height="auto"> <source type="video/mp4"></video>
             <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
         }
@@ -128,43 +134,70 @@ $.getJSON("projects.json", function(grid) {
     var clicked;
     var clickedno;
 
+    // change this to 1 if arrow cursor should be static (on iframe mode): 
+    var arrowcursor = 0 
+
     $(".leftclick").mousemove(function(event){
         // console.log(event.pageY)
-        $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+        if(arrowcursor == 0){
+            $(".leftarrow").show();
+            $(".rightarrow").hide();
+            $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+        }
+        
     })
 
-    $(".leftclick").mouseenter(function(event){
-        $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
-        $(".leftarrow").show();
+    $(".leftclick").mouseover(function(event){
+        if(arrowcursor == 0){
+            $(".leftarrow").css({"position": "fixed", "top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+            $(".leftarrow").show();
+            $(".rightarrow").hide();
+            console.log("mouseover")
+        }
     })
 
     $(".leftclick").mouseout(function(event){
-        $(".leftarrow").hide();
+        if(arrowcursor == 0){
+            $(".leftarrow").hide();
+        }
     })
 
     $(".rightclick").mousemove(function(event){
+        if (arrowcursor == 0){
+            $(".rightarrow").show();
+            $(".leftarrow").hide();
+            $(".rightarrow").css({"position": "fixed", "top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+        }
         // console.log(event.pageY)
-        $(".rightarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+    
     })
 
-    $(".rightclick").mouseenter(function(event){
-        $(".rightarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+    $(".rightclick").mouseover(function(event){
+        if (arrowcursor == 0){
+        $(".rightarrow").css({"position": "fixed", "top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
         $(".rightarrow").show();
+        $(".leftarrow").hide();
+        console.log("mouseover")
+        }
     })
 
     $(".rightclick").mouseout(function(event){
+        if (arrowcursor == 0){
         $(".rightarrow").hide();
+
+        }
     })
 
+
+
     $(".columnimage").on("click", function(){
+        $(".columnimage img").css({"height":"auto", "object-fit":"contain"})
         if ($(window).width() <720){
             $(".columns").css({"flex-direction": "column-reverse"});
             $(".rightgrid").css({"flex":"auto", "height":"min-content"})
             // $(".leftcolumn").css({"flex":"auto", "height":"min-content"})
            
         }
-
-
         slideshow = 1
         clicked = $(this).attr('id')
         clickedno = clicked.slice(-2)
@@ -173,9 +206,66 @@ $.getJSON("projects.json", function(grid) {
         $(".slidecount").removeClass("hidecount");
         
         $( ".columnimage" ).each(function(i) {
-            
+
+            console.log("clickedagain")
             if ($(this).attr('id')== clicked){
-                $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
+
+                if(`${grid[clickedno-1].images[slideno].charAt(0)}` == "h"){
+                    arrowcursor = 1
+                      
+                    $(".arrows").css({"pointer-events":"none"});
+                    $(".rightarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "calc(100% - 100px)", "pointer-events":"all"});
+                    $(".leftarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "0px", "pointer-events":"all"});
+                    $(".rightarrow").show();
+                    $(".leftarrow").show();
+                    $(".leftclick").css({"cursor":"pointer", "pointer-events":"none"});
+                    $(".rightclick").css({"cursor":"pointer", "pointer-events":"none"});
+                    $(this).children('img').hide()
+                    $(this).children('.viddisplay')[0].pause() 
+                    $(this).children('.viddisplay').hide()
+                    $(this).children('.iframeclass').show()
+                    $('.iframeclass').attr('src', `${grid[clickedno-1].images[slideno]}`)  
+                     
+                }
+
+                else if (`${grid[clickedno-1].images[slideno].slice(-4)}`==".mp4"){
+                    arrowcursor = 0
+                   // arrow fix
+                    $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
+                    $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
+                    // $(".rightarrow").hide();
+                    // $(".leftarrow").hide();
+                    $(".arrows").css({"pointer-events":"all"});
+                    $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
+                    $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
+
+                    $(this).children('img').hide()
+                    $('.iframeclass').attr('src', ``) 
+                    $(this).children('.iframeclass').hide()
+                    $('.viddisplay').children().attr('src', `${grid[clickedno-1].images[slideno]}`)
+                    $(this).children('.viddisplay').show()
+                    $(this).children('.viddisplay')[0].load()
+                    $(this).children('.viddisplay')[0].play()  
+                }
+                else{
+                    arrowcursor = 0
+                    // arrow fix
+                    $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
+                    $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
+                    // $(".rightarrow").hide();
+                    // $(".leftarrow").hide();
+                    $(".arrows").css({"pointer-events":"all"});
+                    $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
+                    $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
+
+                    $(this).children('img').show()
+                    $('.iframeclass').attr('src', ``) 
+                    $(this).children('.iframeclass').hide()
+                    $(this).children('.viddisplay')[0].pause()     
+                    $(this).children('.viddisplay').hide()
+                    $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
+                }
+                
             }
             else{
                 $(this).hide()
@@ -223,7 +313,9 @@ $.getJSON("projects.json", function(grid) {
     })
 
     $(".columnitem").click(function(){
-      
+        $(".columnimage img").css({"height":"auto", "object-fit":"contain"})
+  
+       
         $(".slidecount").removeClass("hidecount");
         if ($(window).width() <720){
             $(".columns").css({"flex-direction": "column-reverse"});
@@ -238,7 +330,57 @@ $.getJSON("projects.json", function(grid) {
         $( ".columnimage" ).each(function(i) {
             if ($(this).attr('id').slice(-2) == clickedno){
                 parentid = $(this).parent().attr('id')
-                $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
+                if(`${grid[clickedno-1].images[slideno].charAt(0)}` == "h"){
+                    arrowcursor = 1
+                    $(".arrows").css({"pointer-events":"none"});
+                    $(".rightarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "calc(100% - 100px)", "pointer-events":"all"});
+                    $(".leftarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "0px", "pointer-events":"all"});
+                    $(".rightarrow").show();
+                    $(".leftarrow").show();
+                    $(".leftclick").css({"cursor":"pointer", "pointer-events":"none"});
+                    $(".rightclick").css({"cursor":"pointer", "pointer-events":"none"});
+                    $(this).children('img').hide()
+                    $(this).children('.viddisplay').hide()
+                    $(this).children('.iframeclass').show()
+                    $('.iframeclass').attr('src', `${grid[clickedno-1].images[slideno]}`)        
+                }
+
+                else if (`${grid[clickedno-1].images[slideno].slice(-4)}`==".mp4"){
+                    arrowcursor = 0
+                   // arrow fix
+                    $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
+                    $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
+                    // $(".rightarrow").hide();
+                    // $(".leftarrow").hide();
+                    $(".arrows").css({"pointer-events":"all"});
+                    $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
+                    $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
+
+                    $(this).children('img').hide()
+                    $('.iframeclass').attr('src', ``) 
+                    $(this).children('.iframeclass').hide()
+                    $('.viddisplay').children().attr('src', `${grid[clickedno-1].images[slideno]}`)
+                    $(this).children('.viddisplay').show()
+                    $(this).children('.viddisplay')[0].load()
+                }
+                else{
+                    arrowcursor = 0
+                    // arrow fix
+                    $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
+                    $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
+                    // $(".rightarrow").hide();
+                    // $(".leftarrow").hide();
+                    $(".arrows").css({"pointer-events":"all"});
+                    $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
+                    $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
+
+                    $(this).children('img').show()
+                    $('.iframeclass').attr('src', ``) 
+                    $(this).children('.iframeclass').hide()
+                    $(this).children('.viddisplay').hide()
+                    $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
+                }
+        
             }
             else{
                 $(this).hide()
@@ -283,6 +425,7 @@ $.getJSON("projects.json", function(grid) {
     var resetmode = 0;
 
     function exitslideshow(){
+        $(".columnimage img").css({"height":"100%", "object-fit":"cover"})
         if ($(window).width() <720){
             $(".columns").css({"flex-direction": "row"});
             $(".rightgrid").css({"flex":"50%", "height":"auto"})
@@ -295,7 +438,12 @@ $.getJSON("projects.json", function(grid) {
         slideshow = 0
         slideno = 0
         var selection = "#"+`${clicked}`
-        $("#image"+`${clickedno}`).children().attr('src',`${grid[clickedno-1].image}`)
+        $("#image"+`${clickedno}`).children('img').show()
+        $("#image"+`${clickedno}`).children('.viddisplay')[0].pause()  
+        $("#image"+`${clickedno}`).children('.viddisplay').hide()
+        $("#image"+`${clickedno}`).children('.iframeclass').hide()
+        $("#image"+`${clickedno}`).children('.iframeclass').attr('src',"")
+        $("#image"+`${clickedno}`).children('img').attr('src',`${grid[clickedno-1].image}`)
         $( ".rightcolumns" ).each(function(i) {
             if($(this).attr('id')== parentid){
                

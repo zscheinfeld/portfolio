@@ -20,7 +20,7 @@
         "year": "2021",
         "caption": "Letterforms are typically flat, silhouetted shapes outlined with bezier curves. Subverting this construct, Pixel Land uses variable font technology, which enables many different iterations of a typeface to be incorporated into a single file, to explores the possibility of conveying depth through letterforms.",
         "advisors":"Bethany Johns, John Caserta, Ed Brown",
-        "tags": ["interface","interaction", "3d", "web"],
+        "tags": ["interface","interaction", "3d", "web", "motion"],
         "column": "2",
         "images":["img/2/1.gif", "img/2/2.png", "img/2/3.png","img/2/4.gif","img/2/5.gif"],
         "link":["<a href=`https://zscheinfeld.github.io/Pixelland/` target=`_blank`>Pixel Land Website</a>"]
@@ -32,8 +32,8 @@
         "year": "2022",
         "caption": "Inbox interpreter is a network of websites that re-designs the interface of a typical email inbox. The system takes content that is usually anxiety inducing, and transforms it into a whimsical interface consisting of five websites spanning across ten monitors. Each phase of the network highlights a fragment of my inbox, and produces an animation or click interaction that recontextualizes the email’s language. The work was installed as a physical installation in the form of a circle, giving users the opportunity to take a slow walk around my email.",
         "advisors":"Bethany Johns, John Caserta, Ed Brown",
-        "tags": ["interface","interaction", "3d", "web"],
-        "images":["img/3/1.gif", "img/3/2.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
+        "tags": ["interface","interaction", "3d", "web", "motion"],
+        "images":["https://zscheinfeld.github.io/inboxpoems/wondering/index.html", "img/3/10.mp4", "img/3/11.mp4", "img/3/1.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
         "link":["<a href=`https://zscheinfeld.github.io/inboxpoems/` target=`_blank`>Inbox Interpreter Website</a>"],
         "column": "3"
        
@@ -45,10 +45,10 @@
         "name": "Falling Elements",
         "image": "img/cover/4.gif",
         "year": "2022",
-        "caption": "Inbox interpreter re-designs the interface of a typical email inbox. The system takes content that is usually anxiety inducing, and transforms it into a whimsical network consisting of five websites spanning across ten monitors. Each site and phase of the network highlights a fragment of my inbox, and produces an animation or click interaction that recontextualizes the email’s language. The work was installed as a physical installation in the form of a circle, giving users the opportunity to take a slow walk’ around their email.",
-        "advisors":"Bethany Johns, John Caserta, Ed Brown",
-        "tags": ["interface","interaction", "web"],
+        "caption": "Falling Elements is a version of a falling sand game, a genre of computer games that contains components for users to create unique simulated environments. Each element has its own action that comes from a simple rule. For instance, sand will travel down or diagonal. Water goes down, diagonal, or side to side. By providing a toolkit of simple behaviors, the game allows for users to create complex and unexpected simulations, providing the opportunity to not only act as a player, but also a game maker and storyteller.",
+        "tags": ["interface","interaction", "web" , "motion", "game"],
         "column": "1",
+        "images":["img/4/1.mp4"],
         "link":[]
           
     },
@@ -59,7 +59,8 @@
         "year": "2021",
         "advisors":"Doug Scott",
         "caption": "A rebranding of the Swiss railroad and UNESCO World Heritage site famous for swirling viaducts and elongated tunnels that allow for transportation across the Alps.",
-        "tags": ["identity","print", "typography"],
+        "images":["img/5/1.jpg", "img/5/2.jpg" , "img/5/3.jpg" , "img/5/4.jpg", "img/5/5.jpg","img/5/6.jpg"],
+        "tags": ["identity","print", "typography", "publication"],
         "column": "2",
         "link":[]
           
@@ -70,9 +71,10 @@
         "name": "System for a System",
         "image": "img/cover/6.gif",
         "year": "2021",
-        "caption": "Radical Modernism is a mini publication that showcases the work of American designer Dan Friedman (1945-1995), and Italian architecture firm Superstudio (1960s). The book explores Friedman’s idea of “working outside of the margins.” I wrote a small introduction essay that is included throughout the project documentation below.",
+        "caption": "System for a System is a living database of terms, influences, historical references, ideas and projects related to my graduate thesis research. In this site, the process of collection is the content. The site uses a data visualization library to create a flexible network that can be manipulated and reshuffled to tell the story of my research in a flexible and non-linear way.",
         "advisors":"Doug Scott",
-        "tags": ["interface","interaction", "web"],
+        "tags": ["interface","interaction", "web", "motion"],
+        "images":["img/6/1.mp4", "img/6/2.mp4"],
         "column": "3",
         "link":[]
           

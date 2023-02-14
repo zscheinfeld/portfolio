@@ -10,6 +10,25 @@ body{
     /* cursor: none; */
 }
 
+.iframeclass{
+    background-color: black;  
+    background-size: cover;
+    background-image: url("/img/load.gif");
+    display: none;
+	--div-width: calc((100vw - 70px) * .75);
+	width: var(--div-width);
+    height: calc(var(--div-width) * 9 / 16);
+    border: none;
+    cursor: pointer;
+}
+
+.viddisplay{
+    display: none;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+
 .mouse{
     background-color: white;
     position: fixed;
@@ -493,9 +512,10 @@ body{
 
 .leftarrow{
     display: none;
-    position: fixed;
-    top: 0px;
+    position: absolute;
+    top: calc(50% - 50px);
     left: 0px;
+    padding-left: 5px;
     width:100px;
     height: 100px;
     font-family: 'Inter', sans-serif;
@@ -511,9 +531,11 @@ body{
 
 .rightarrow{
     display: none;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    position: absolute;
+    text-align: right;
+    padding-right: 5px;
+    top: calc(50% - 50px);
+    right: 0px;
     width:100px;
     height: 100px;
     font-family: 'Inter', sans-serif;
@@ -526,6 +548,15 @@ body{
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
+
+.rightarrow:hover {
+    mix-blend-mode: normal;
+}
+
+.leftarrow:hover {
+    mix-blend-mode: normal;
+}
+
 
 .slidecount{
     font-family: 'Inter', sans-serif;
