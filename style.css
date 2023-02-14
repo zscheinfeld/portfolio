@@ -13,7 +13,7 @@ body{
 .iframeclass{
     background-color: black;  
     background-size: cover;
-    background-image: url("/img/load.gif");
+    background-image: url("img/load.gif");
     display: none;
 	--div-width: calc((100vw - 70px) * .75);
 	width: var(--div-width);
