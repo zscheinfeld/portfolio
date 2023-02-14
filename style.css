@@ -156,6 +156,14 @@ body{
     flex-direction: column;
 }
 
+.bggrid3{
+    transform: translateY(0px);
+    transition-property: all;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;   
+}
+
 .topnav{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -458,6 +466,9 @@ body{
     margin-bottom: 10px;
     background-color: transparent;
     cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     
 }
 
@@ -466,6 +477,9 @@ body{
     height: 100%;
     object-fit: cover;
     background-color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     
 }
 
@@ -475,6 +489,42 @@ body{
     position: absolute;
     background-color: transparent;
     display: flex;
+}
+
+.leftarrow{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100px;
+    height: 100px;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    color: white;
+    font-size: 80px;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.rightarrow{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100px;
+    height: 100px;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    color: white;
+    font-size: 80px;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .slidecount{
@@ -506,14 +556,14 @@ body{
     height: 100%;
     width: 50%;
     background-color: transparent;
-    cursor: w-resize;
+    cursor: none;
 }
 
 .rightclick{
     height: 100%;
     width: 50%;
     background-color: transparent;
-    cursor: e-resize;
+    cursor: none;
 }
 
 @media screen and (max-width:720px) {

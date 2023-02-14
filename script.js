@@ -20,8 +20,6 @@ $.getJSON("projects.json", function(grid) {
     $(".leftcolumns").height(gridheight)
 
 
-
-
     let column1 = '';
     let column2 = '';
     let column3 = '';
@@ -47,7 +45,7 @@ $.getJSON("projects.json", function(grid) {
 
         imagetags=""
         for (i=0; i<project.tags.length; i++){
-            imagetags += `<div class="tag">${project.tags[i]}</div>`
+            imagetags += `<div class="tag ${project.tags[i]}">${project.tags[i]}</div>`
             if(tagsarray.includes(project.tags[i])){
 
             }
@@ -65,7 +63,7 @@ $.getJSON("projects.json", function(grid) {
         if (`${project.column}`== "1"){
             column1 +=  
             `<div class="columnimage" id="image${project.item}">
-            <div class="hidearrow arrows" ><div class="leftclick"></div><div class="rightclick"></div></div>
+            <div class="hidearrow arrows" ><div class="leftclick"><div class="leftarrow"><</div></div><div class="rightclick"><div class="rightarrow">></div></div></div>
             <img src= ${project.image}>
             <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
@@ -74,7 +72,7 @@ $.getJSON("projects.json", function(grid) {
         else if(`${project.column}`== "2"){
             column2 +=  
            `<div class="columnimage" id="image${project.item}">
-            <div class="hidearrow arrows"><div class="leftclick"></div><div class="rightclick"></div></div>
+           <div class="hidearrow arrows" ><div class="leftclick"><div class="leftarrow"><</div></div><div class="rightclick"><div class="rightarrow">></div></div></div>
             <img src= ${project.image}>
             <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
@@ -83,7 +81,7 @@ $.getJSON("projects.json", function(grid) {
         else if(`${project.column}`== "3"){
             column3 +=  
             `<div class="columnimage" id="image${project.item}">
-            <div class="hidearrow arrows"><div class="leftclick"></div><div class="rightclick"></div></div>
+            <div class="hidearrow arrows" ><div class="leftclick"><div class="leftarrow"><</div></div><div class="rightclick"><div class="rightarrow">></div></div></div>
             <img src= ${project.image}>
             <div class ="slidecount hidecount"><div class="currentslide">1</div>/<div class="totalslide">2</div></div>
             </div>`
@@ -96,7 +94,7 @@ $.getJSON("projects.json", function(grid) {
     
 
     for(i=0; i<tagsarray.length; i++){
-        $(".tags").append(`<div class="tag" id="${tagsarray[i]}">${tagsarray[i]}</div>`);
+        $(".tags").append(`<div class="tag ${tagsarray[i]}">${tagsarray[i]}</div>`);
     }
 
    
@@ -130,8 +128,35 @@ $.getJSON("projects.json", function(grid) {
     var clicked;
     var clickedno;
 
-    $(".columnimage").on("click", function(){
+    $(".leftclick").mousemove(function(event){
+        // console.log(event.pageY)
+        $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+    })
 
+    $(".leftclick").mouseenter(function(event){
+        $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+        $(".leftarrow").show();
+    })
+
+    $(".leftclick").mouseout(function(event){
+        $(".leftarrow").hide();
+    })
+
+    $(".rightclick").mousemove(function(event){
+        // console.log(event.pageY)
+        $(".rightarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+    })
+
+    $(".rightclick").mouseenter(function(event){
+        $(".rightarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+        $(".rightarrow").show();
+    })
+
+    $(".rightclick").mouseout(function(event){
+        $(".rightarrow").hide();
+    })
+
+    $(".columnimage").on("click", function(){
         if ($(window).width() <720){
             $(".columns").css({"flex-direction": "column-reverse"});
             $(".rightgrid").css({"flex":"auto", "height":"min-content"})
@@ -148,6 +173,7 @@ $.getJSON("projects.json", function(grid) {
         $(".slidecount").removeClass("hidecount");
         
         $( ".columnimage" ).each(function(i) {
+            
             if ($(this).attr('id')== clicked){
                 $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
             }
@@ -197,15 +223,16 @@ $.getJSON("projects.json", function(grid) {
     })
 
     $(".columnitem").click(function(){
+      
         $(".slidecount").removeClass("hidecount");
         if ($(window).width() <720){
             $(".columns").css({"flex-direction": "column-reverse"});
            
         }
         slideshow = 1
+        // I think clicked is the key
         clicked = $(this).attr('id')
         clickedno = clicked.slice(-2)
-
         $(".arrows").removeClass("hidearrow");
         
         $( ".columnimage" ).each(function(i) {
@@ -261,7 +288,6 @@ $.getJSON("projects.json", function(grid) {
             $(".rightgrid").css({"flex":"50%", "height":"auto"})
             $(".leftcolumn").css({"flex":"50%"})
             
-           
         }
         console.log("cicked")
         $(".arrows").addClass("hidearrow");
@@ -269,8 +295,7 @@ $.getJSON("projects.json", function(grid) {
         slideshow = 0
         slideno = 0
         var selection = "#"+`${clicked}`
-
-        $("#"+`${clicked}`).children().attr('src',`${grid[clickedno-1].image}`)
+        $("#image"+`${clickedno}`).children().attr('src',`${grid[clickedno-1].image}`)
         $( ".rightcolumns" ).each(function(i) {
             if($(this).attr('id')== parentid){
                
@@ -307,20 +332,23 @@ $.getJSON("projects.json", function(grid) {
     $("#projectreset").click(function(){
         console.log(resetmode)
         if (resetmode == 0){
+           
             // $(".bgspace").show();
             // $(".bggrid").show();
             // $(window).scrollTop(scrolltoheight)
+            // $(".bggrid3").css('transform', `translateY(${scrolltoheight}px)`)
+            
             if ($(window).width() <720){
                 scrolltoheight - window.pageYOffset
                 console.log(window.pageYOffset)
             }
-
             $("html, body").animate({ scrollTop: scrolltoheight}, 1300, "swing");
             setTimeout(() => {
             $(".bgspace").hide();
             $(".bggrid").hide();
+      
             resetmode = 1
-        }, "1200")
+        }, "2000")
 
         }
 
@@ -337,8 +365,12 @@ $.getJSON("projects.json", function(grid) {
             }
             columncounter = 1;
             console.log(projectarray)
+            detachedprojectlist = $(".leftcolumn").children().detach()
             detachedprojectarray = $(".rightcolumns").children().detach()
+            // detachedprojectarray = $(".rightcolumns").children().detach()
             for(x=0;x< projectarray.length; x++){
+                $(".leftcolumn").append(projectlist[x])
+                $(".leftcolumn").append(captionlist[x])
                 var columnid = "#column" + `${columncounter}`
                 $(columnid).append(projectarray[x])
                  if(columncounter == 3){
@@ -351,6 +383,7 @@ $.getJSON("projects.json", function(grid) {
             turnedontagsarray =[]
             tagson= 0;
             detachedprojectarray = [];
+            detachedprojectlist = [];
             $(".tagselect").addClass("tag")
             $(".tagselect").removeClass("tagselect")
             resetmode = 1
@@ -379,39 +412,49 @@ $.getJSON("projects.json", function(grid) {
     turnedontagsarray =[]
     var index;
     var projectarray = [];
+    var projectlist = [];
+    var captionlist = [];
     var detachedprojectarray = [];
+    var detachedprojectlist = [];
     var columncounter = 1;
     var projectno; 
     var tagson= 0; 
-    
-    $(".tag").click(function(){ 
+    var thisclass;
+
+    function tagfilter(thisvariable){
+  
+        thisclass = thisvariable
         resetmode = 2 
         if(slideshow == 1){
             exitslideshow();
             slideshow = 0
         }
         // make reset button remember that tags have been turned on 
-        
             var turnedonprojects = []
+            var turnedonprojectlist = []
+            var turnedoncaptionlist = [];
             tagson = tagson + 1 
     
-            if (turnedontagsarray.includes($(this).attr('id'))){
-                index = turnedontagsarray.indexOf($(this).attr('id'));
+            if (turnedontagsarray.includes(thisvariable)){
+                index = turnedontagsarray.indexOf(thisvariable);
                 turnedontagsarray.splice(index,1)
     
             }
             else{
-                turnedontagsarray.push($(this).attr('id'))
+                turnedontagsarray.push(thisvariable)
             }
-            $(this).toggleClass("tag")
-            $(this).toggleClass("tagselect")
+            $(`.${thisclass}`).toggleClass("tag")
+            $(`.${thisclass}`).toggleClass("tagselect")
             $.each(grid, function(i, project) {
                 projectno = $(this)[0].item;
                 if(tagson < 2){
                     projectarray[i]= $("#image" + `${projectno}`).detach();
+                    projectlist[i]= $("#label" + `${projectno}`).detach();
+                    captionlist[i]= $("#caption" + `${projectno}`).detach();
                 }
                 else{
                     detachedprojectarray = $(".rightcolumns").children().detach()
+                    detachedprojectlist = $(".leftcolumn").children().detach()
                 }
                 for(x=0; x< $(this)[0].tags.length ; x++){ 
                     if((turnedontagsarray.includes($(this)[0].tags[x])) == true){
@@ -419,6 +462,8 @@ $.getJSON("projects.json", function(grid) {
                         }
                         else{
                             turnedonprojects.push(projectarray[i])
+                            turnedonprojectlist.push(projectlist[i])
+                            turnedoncaptionlist.push(captionlist[i])
                         }
                         continue;          
                     }
@@ -429,6 +474,8 @@ $.getJSON("projects.json", function(grid) {
     
             for(x=0;x< turnedonprojects.length; x++){
                 var columnid = "#column" + `${columncounter}`
+                $(".leftcolumn").append(turnedonprojectlist[x])
+                $(".leftcolumn").append(turnedoncaptionlist[x])
                 $(columnid).append(turnedonprojects[x])
                  if(columncounter == 3){
                         columncounter = 1
@@ -440,14 +487,12 @@ $.getJSON("projects.json", function(grid) {
     
             }
             
-        
 
-
-        
-
-
+    }
     
-
+    $(".tag").click(function(){ 
+        thisvariable = $(this).html()
+        tagfilter(thisvariable)
     })
 
     $(".buttonhalf").click(function(){
