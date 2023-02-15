@@ -87,6 +87,7 @@
         "year": "2021",
         "caption": "Radical Modernism is a mini publication that showcases the work of American designer Dan Friedman (1945-1995), and Italian architecture firm Superstudio (1960s). The book explores Friedman’s idea of “working outside of the margins.” I wrote a small introduction essay that is included throughout the project documentation below.",
         "advisors":"Doug Scott",
+        "images":["img/7/1.jpg","img/7/2.jpg","img/7/3.jpg"],
         "tags": ["book","publication", "typography"],
         "column": "3",
         "link":[]
@@ -100,6 +101,7 @@
         "caption": "Stereocard Plates uses stereocards from the Providence Public Library Special Collections as source materials to experiment combining antiquated photographic technology with contemporary computer vision and digital fabrication equipment. In filtering 19th century imagery through modern scanners, image stitching algorithms, UV printers, pen plotters, and laser engravers, the plates contain traces of technology from various industrial eras, referencing the rapid evolution society has experieced in capturing and archiving imagery over the past 200 years.",
         "advisors":"Bethany Johns, John Caserta",
         "tags": ["fabrication","photography"],
+        "images":["img/8/1.jpg","img/8/2.jpg","img/8/3.jpg","img/8/4.jpg","img/8/5.jpg","img/8/6.jpg"],
         "column": "1",
         "link":[]
           
