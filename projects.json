@@ -18,7 +18,7 @@
         "name": "Pixel Land",
         "image": "img/cover/2.gif",
         "year": "2021",
-        "caption": "Letterforms are typically flat, silhouetted shapes outlined with bezier curves. Subverting this construct, Pixel Land uses variable font technology, which enables many different iterations of a typeface to be incorporated into a single file, to explores the possibility of conveying depth through letterforms.",
+        "caption": "Letterforms are typically flat, silhouetted shapes outlined with bezier curves. Subverting this construct, Pixel Land uses variable font technology, which enables many different iterations of a typeface to be incorporated into a single file, to explore the possibility of conveying depth through letterforms. The project culminated in a web-based type specimen that uses the rotating letterforms as characters in an illustrated retelling of Edwin Abbott Abbott's Flatland.",
         "advisors":"Bethany Johns, John Caserta, Ed Brown",
         "tags": ["interface","interaction", "3d", "web", "motion"],
         "column": "2",
@@ -71,7 +71,7 @@
         "name": "System for a System",
         "image": "img/cover/6.gif",
         "year": "2021",
-        "caption": "System for a System is a living database of terms, influences, historical references, ideas and projects related to my graduate thesis research. In this site, the process of collection is the content. The site uses a data visualization library to create a flexible network that can be manipulated and reshuffled to tell the story of my research in a flexible and non-linear way.",
+        "caption": "System for a System is a living database of terms, influences, historical references, ideas and projects related to my graduate thesis research. The site uses a data visualization library to create a flexible network that can be manipulated and reshuffled to tell the story of my research in a flexible and non-linear way.",
         "advisors":"Doug Scott",
         "tags": ["interface","interaction", "web", "motion"],
         "images":["img/6/1.mp4", "img/6/2.mp4"],
@@ -87,7 +87,7 @@
         "year": "2021",
         "caption": "Radical Modernism is a mini publication that showcases the work of American designer Dan Friedman (1945-1995), and Italian architecture firm Superstudio (1960s). The book explores Friedman’s idea of “working outside of the margins.” I wrote a small introduction essay that is included throughout the project documentation below.",
         "advisors":"Doug Scott",
-        "images":["img/7/1.jpg","img/7/2.jpg","img/7/3.jpg"],
+        "images":["img/7/1.jpg","img/7/2.jpg","img/7/3.jpg", "img/7/4.jpg", "img/7/5.jpg"],
         "tags": ["book","publication", "typography"],
         "column": "3",
         "link":[]
@@ -123,8 +123,9 @@
         "name": "Mainfactor",
         "image": "img/cover/10.jpg",
         "year": "2022",
-        "caption": "Break; is a publication about the idea of the loop: a repeated set of instructions for a computer to execute. Like a loop, the publication itself builds up overtime through the layering of images and content. At the end of the cycle, the book offers the reader an opportunity to break out of the loop by expanding into a poster.",
-        "tags": ["web","interface", "mobile"],
+        "caption": "Along with the team at Studio Rodrigo in Brooklyn, NY, I designed a marketing splash page for Mainfactor, an e-commerce business. The goal for the site is to emphasize Mainfactor’s unique capabilities with a bold, creative design that mirrors their position as an industry disruptor.",
+        "tags": ["web","interface", "mobile", "product", "UX"],
+        "images": ["img/10/1.jpg", "img/10/2.mp4", "img/10/3.gif", "img/10/4.jpg", "img/10/5.jpg"],
         "column": "3",
         "link":[]
           
@@ -134,8 +135,9 @@
         "name": "Language Time",
         "image": "img/cover/11.jpg",
         "year": "2022",
-        "caption": "Break; is a publication about the idea of the loop: a repeated set of instructions for a computer to execute. Like a loop, the publication itself builds up overtime through the layering of images and content. At the end of the cycle, the book offers the reader an opportunity to break out of the loop by expanding into a poster.",
+        "caption": "Language Time is a collaborative compendium created by masters students in Digital + Media at the Rhode Island School of Design about their studio practices. The book uses a color coding system to create a unique section for each artist, but also reflects the synergetic nature of the work in moments like the RISO printed gradient shown on the cover. The project was commisioned through the course 'Critical Theory + Artistic Research in Context at RISD (Spring 2022)",
         "tags": ["book","publication", "typography", "print"],
+        "images": ["img/11/1.jpg", "img/11/2.jpg", "img/11/3.jpg", "img/11/4.jpg", "img/11/5.jpg", "img/11/6.jpg", "img/11/7.jpg"],
         "column": "1",
         "link":[]
           
@@ -147,7 +149,8 @@
         "image": "img/cover/12.jpg",
         "year": "2022",
         "caption": "Block party is a module typeface inspired by Giulio da Milano’s 1933 typeface Fregio Mecano. The original typeface was a kit of letterpress components that could be combined to create countless iterations of each letterform. In this revival, I extrude the forms into three dimensional blocks that designers can play, manipulate, and create with. The kit comes with blocks made out of varying materials meant to be combined and experimented on.",
-        "tags": ["3d", "typography", "interaction"],
+        "tags": ["3d", "typography", "interaction", "sculpture"],
+        "images": ["img/12/1.jpg", "img/12/2.mp4", "img/12/3.jpg"],
         "column": "2",
         "link":[]
           
@@ -160,6 +163,7 @@
         "year": "2021",
         "caption": "“Spiral Flight” utilizes a photosphere image capturing tool, which is typically used to document vast public places, and applies it to the confined spaces of urban alleyway staircases. The resulting sculpture investigates the tension between the visual qualities of place-based objects and the output of the technology we use to capture them.",
         "tags": ["3d", "installation"],
+        "images": ["img/13/1.jpg", "img/13/2.jpg", "img/13/3.jpg", "img/13/4.jpg", "img/13/5.jpg", "img/13/6.jpg"],
         "column": "3",
         "link":[]
           

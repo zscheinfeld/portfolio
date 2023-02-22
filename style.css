@@ -20,12 +20,14 @@ body{
     height: calc(var(--div-width) * 9 / 16);
     border: none;
     cursor: pointer;
+
 }
 
 .viddisplay{
     display: none;
     background-color: transparent;
     pointer-events: none;
+
 }
 
 
@@ -35,6 +37,7 @@ body{
     border-radius: 100px;
     height: 50px;
     width: 50px;
+
 }
 
 .bgbuttonwhite{
@@ -508,6 +511,7 @@ body{
     position: absolute;
     background-color: transparent;
     display: flex;
+    cursor: none;
 }
 
 .leftarrow{
@@ -527,6 +531,7 @@ body{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    cursor: none;
 }
 
 .rightarrow{
@@ -547,14 +552,17 @@ body{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    cursor: none;
 }
 
 .rightarrow:hover {
     mix-blend-mode: normal;
+    cursor: none;
 }
 
 .leftarrow:hover {
     mix-blend-mode: normal;
+    cursor: none;
 }
 
 

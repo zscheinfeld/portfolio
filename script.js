@@ -142,7 +142,7 @@ $.getJSON("projects.json", function(grid) {
         if(arrowcursor == 0){
             $(".leftarrow").show();
             $(".rightarrow").hide();
-            $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px"})
+            $(".leftarrow").css({"top":`${event.pageY - 67}` + "px", "left":`${event.pageX - 40}` + "px", })
         }
         
     })
@@ -640,7 +640,7 @@ $.getJSON("projects.json", function(grid) {
     
     $(".tag").click(function(){ 
         thisvariable = $(this).html()
-        tagfilter(thisvariable)
+        tagfilter(thisvariable) 
     })
 
     $(".buttonhalf").click(function(){
