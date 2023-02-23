@@ -18,11 +18,11 @@
         "name": "Pixel Land",
         "image": "img/cover/2.gif",
         "year": "2021",
-        "caption": "Letterforms are typically flat, silhouetted shapes outlined with bezier curves. Subverting this construct, Pixel Land uses variable font technology, which enables many different iterations of a typeface to be incorporated into a single file, to explore the possibility of conveying depth through letterforms. The project culminated in a web-based type specimen that uses the rotating letterforms as characters in an illustrated retelling of Edwin Abbott Abbott's Flatland.",
+        "caption": "A variable typeface that explores the possibility of conveying depth through letterforms. The project culminated in a web-based type specimen that uses the rotating letterforms as characters in an illustrated retelling of Edwin Abbott Abbott's Flatland.",
         "advisors":"Bethany Johns, John Caserta, Ed Brown",
         "tags": ["interface","interaction", "3d", "web", "motion"],
         "column": "2",
-        "images":["img/2/1.gif", "img/2/2.png", "img/2/3.png","img/2/4.gif","img/2/5.gif"],
+        "images":["img/2/1.gif", "img/2/2.png", "img/2/3.jpg","img/2/4.png","img/2/5.gif","img/2/6.gif","img/2/7.mp4"],
         "link":["<a href=`https://zscheinfeld.github.io/Pixelland/` target=`_blank`>Pixel Land Website</a>"]
     },
     {
@@ -73,7 +73,7 @@
         "year": "2021",
         "caption": "System for a System is a living database of terms, influences, historical references, ideas and projects related to my graduate thesis research. The site uses a data visualization library to create a flexible network that can be manipulated and reshuffled to tell the story of my research in a flexible and non-linear way.",
         "advisors":"Doug Scott",
-        "tags": ["interface","interaction", "web", "motion"],
+        "tags": ["interface","interaction", "web", "motion", "network"],
         "images":["img/6/1.mp4", "img/6/2.mp4"],
         "column": "3",
         "link":[]

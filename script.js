@@ -1,8 +1,10 @@
 var bgmode= 0;
+var ismobile = 0
 
 $.getJSON("projects.json", function(grid) {
 
     if ($(window).width() <720){
+        ismobile = 1
         var greenheight = window.innerHeight - 60
         // console.log(greenheight)
         $(".bgspace").height(greenheight)
@@ -202,7 +204,12 @@ $.getJSON("projects.json", function(grid) {
         clicked = $(this).attr('id')
         clickedno = clicked.slice(-2)
         parentid = $(this).parent().attr('id')
-        $(".arrows").removeClass("hidearrow");
+        if (ismobile == 1){
+                       
+        }
+        else{
+            $(".arrows").removeClass("hidearrow");
+        }
         $(".slidecount").removeClass("hidecount");
         
         $( ".columnimage" ).each(function(i) {
@@ -211,33 +218,45 @@ $.getJSON("projects.json", function(grid) {
             if ($(this).attr('id')== clicked){
 
                 if(`${grid[clickedno-1].images[slideno].charAt(0)}` == "h"){
-                    arrowcursor = 1
-                      
-                    $(".arrows").css({"pointer-events":"none"});
-                    $(".rightarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "calc(100% - 100px)", "pointer-events":"all"});
-                    $(".leftarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "0px", "pointer-events":"all"});
-                    $(".rightarrow").show();
-                    $(".leftarrow").show();
-                    $(".leftclick").css({"cursor":"pointer", "pointer-events":"none"});
-                    $(".rightclick").css({"cursor":"pointer", "pointer-events":"none"});
-                    $(this).children('img').hide()
-                    $(this).children('.viddisplay')[0].pause() 
-                    $(this).children('.viddisplay').hide()
-                    $(this).children('.iframeclass').show()
-                    $('.iframeclass').attr('src', `${grid[clickedno-1].images[slideno]}`)  
+                    if (ismobile == 1){
+                        slideno = slideno + 1
+                        
+                    }
+
+                    else{
+                        arrowcursor = 1
+                        $(".arrows").css({"pointer-events":"none"});
+                        $(".rightarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "calc(100% - 100px)", "pointer-events":"all"});
+                        $(".leftarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "0px", "pointer-events":"all"});
+                        $(".rightarrow").show();
+                        $(".leftarrow").show();
+                        $(".leftclick").css({"cursor":"pointer", "pointer-events":"none"});
+                        $(".rightclick").css({"cursor":"pointer", "pointer-events":"none"});
+                        $(this).children('img').hide()
+                        $(this).children('.viddisplay')[0].pause() 
+                        $(this).children('.viddisplay').hide()
+                        $(this).children('.iframeclass').show()
+                        $('.iframeclass').attr('src', `${grid[clickedno-1].images[slideno]}`) 
+                    }      
                      
                 }
 
                 else if (`${grid[clickedno-1].images[slideno].slice(-4)}`==".mp4"){
-                    arrowcursor = 0
+                    
+                    if (ismobile == 1){
+                     
+                    }
+
+                    else{
+                        arrowcursor = 0
+                        $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
+                        $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
+                        $(".arrows").css({"pointer-events":"all"});
+                        $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
+                        $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
+                    }
                    // arrow fix
-                    $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
-                    $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
-                    // $(".rightarrow").hide();
-                    // $(".leftarrow").hide();
-                    $(".arrows").css({"pointer-events":"all"});
-                    $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
-                    $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
+                    
 
                     $(this).children('img').hide()
                     $('.iframeclass').attr('src', ``) 
@@ -248,22 +267,26 @@ $.getJSON("projects.json", function(grid) {
                     $(this).children('.viddisplay')[0].play()  
                 }
                 else{
-                    arrowcursor = 0
-                    // arrow fix
-                    $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
-                    $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
-                    // $(".rightarrow").hide();
-                    // $(".leftarrow").hide();
-                    $(".arrows").css({"pointer-events":"all"});
-                    $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
-                    $(".rightclick").css({"cursor":"none", "pointer-events":"all"});
 
-                    $(this).children('img').show()
+                    if (ismobile == 1){
+                       
+                    }
+
+                    else{
+                        arrowcursor = 0
+                        $(".rightarrow").css({"position":"fixed", "pointer-events":"none"});
+                        $(".leftarrow").css({"position":"fixed", "pointer-events":"none"});
+                        $(".arrows").css({"pointer-events":"all"});
+                        $(".leftclick").css({"cursor":"none", "pointer-events":"all"});
+                        $(".rightclick").css({"cursor":"none", "pointer-events":"all"});    
+                    }
+                    // arrow fix
                     $('.iframeclass').attr('src', ``) 
                     $(this).children('.iframeclass').hide()
                     $(this).children('.viddisplay')[0].pause()     
                     $(this).children('.viddisplay').hide()
                     $(':nth-child(2)', this).attr('src',`${grid[clickedno-1].images[slideno]}`)
+                    $(this).children('img').show()
                 }
                 
             }
@@ -325,24 +348,37 @@ $.getJSON("projects.json", function(grid) {
         // I think clicked is the key
         clicked = $(this).attr('id')
         clickedno = clicked.slice(-2)
-        $(".arrows").removeClass("hidearrow");
-        
+        if (ismobile == 1){
+                       
+        }
+        else{
+            $(".arrows").removeClass("hidearrow");
+        }
+         
         $( ".columnimage" ).each(function(i) {
             if ($(this).attr('id').slice(-2) == clickedno){
                 parentid = $(this).parent().attr('id')
                 if(`${grid[clickedno-1].images[slideno].charAt(0)}` == "h"){
-                    arrowcursor = 1
-                    $(".arrows").css({"pointer-events":"none"});
-                    $(".rightarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "calc(100% - 100px)", "pointer-events":"all"});
-                    $(".leftarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "0px", "pointer-events":"all"});
-                    $(".rightarrow").show();
-                    $(".leftarrow").show();
-                    $(".leftclick").css({"cursor":"pointer", "pointer-events":"none"});
-                    $(".rightclick").css({"cursor":"pointer", "pointer-events":"none"});
-                    $(this).children('img').hide()
-                    $(this).children('.viddisplay').hide()
-                    $(this).children('.iframeclass').show()
-                    $('.iframeclass').attr('src', `${grid[clickedno-1].images[slideno]}`)        
+
+                    if (ismobile == 1){
+                        slideno = slideno + 1
+                        
+                    }
+                    else{
+                        arrowcursor = 1
+                        $(".arrows").css({"pointer-events":"none"});
+                        $(".rightarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "calc(100% - 100px)", "pointer-events":"all"});
+                        $(".leftarrow").css({"position":"absolute", "top": "calc(50% - 50px)", "left": "0px", "pointer-events":"all"});
+                        $(".rightarrow").show();
+                        $(".leftarrow").show();
+                        $(".leftclick").css({"cursor":"pointer", "pointer-events":"none"});
+                        $(".rightclick").css({"cursor":"pointer", "pointer-events":"none"});
+                        $(this).children('img').hide()
+                        $(this).children('.viddisplay').hide()
+                        $(this).children('.iframeclass').show()
+                        $('.iframeclass').attr('src', `${grid[clickedno-1].images[slideno]}`) 
+                    }
+                    
                 }
 
                 else if (`${grid[clickedno-1].images[slideno].slice(-4)}`==".mp4"){
@@ -683,16 +719,23 @@ $.getJSON("projects.json", function(grid) {
     })
 
     $("#about").click(function(){
-        aboutclicked = 1;
-        resetmode = 0;
-        $(".bgspace").show();
-        $(".bggrid").show();
-        $(window).scrollTop(scrolltoheight)
-        $("html, body").animate({ scrollTop: 0},1000, "swing");
-        setTimeout(() => {
-            aboutclicked = 0
-            fired=0;
-        }, "1100")
+
+        if (resetmode == 0){
+
+        }
+
+        else{
+            aboutclicked = 1;
+            resetmode = 0;
+            $(".bgspace").show();
+            $(".bggrid").show();
+            $(window).scrollTop(scrolltoheight)
+            $("html, body").animate({ scrollTop: 0},1000, "swing");
+            setTimeout(() => {
+                aboutclicked = 0
+                fired=0;
+            }, "1100")
+        } 
         
     })
 
