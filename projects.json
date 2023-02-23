@@ -33,7 +33,7 @@
         "caption": "Inbox interpreter is a network of websites that re-designs the interface of a typical email inbox. The system takes content that is usually anxiety inducing, and transforms it into a whimsical interface consisting of five websites spanning across ten monitors. Each phase of the network highlights a fragment of my inbox, and produces an animation or click interaction that recontextualizes the email’s language. The work was installed as a physical installation in the form of a circle, giving users the opportunity to take a slow walk around my email.",
         "advisors":"Bethany Johns, John Caserta, Ed Brown",
         "tags": ["interface","interaction", "3d", "web", "motion", "installation"],
-        "images":["https://zscheinfeld.github.io/inboxpoems/wondering/index.html", "img/3/10.mp4", "img/3/11.mp4", "img/3/1.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
+        "images":["https://zscheinfeld.github.io/inboxpoems/wondering/index.html", "https://player.vimeo.com/video/746675405?h=db3fa76d07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/3/1.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
         "link":["<a href=`https://zscheinfeld.github.io/inboxpoems/` target=`_blank`>Inbox Interpreter Website</a>"],
         "column": "3"
        
