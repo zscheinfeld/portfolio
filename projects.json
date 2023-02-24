@@ -236,14 +236,14 @@
 
     {
         "item": "19",
-        "name": "Wonderfully Creepy",
-        "image": "img/cover/19.jpg",
-        "year": "2020",
-        "caption": "New media are so powerful because they mess with the distinction between publicity and privacy, gossip and political speech, surveillance and entertainment, intimacy and work, hype and reality. New media are wonderfully creepy. They are endlessly fascinating yet boring, addictive yet revolting, banal yet revolutionary.`These dichotomies, described in the introduction of Updating to Remain the Same by Wendy Hui Kyong Chun, inspired my project, Wonderfully Creepy: Notes From Two Star-Crossed Corners of the Internet. The project is a collection of essays and artworks in conversation with Chun’s analysis of new media.",
-        "tags": ["book", "print", "typography", "publication"],
-        "images": ["img/19/1.jpg", "img/19/2.jpg", "img/19/3.jpg", "img/19/4.jpg", "img/19/5.jpg", "img/19/6.jpg", "img/19/7.jpg"],
+        "name": "Spirograph Retooling",
+        "image": "img/cover/19.gif",
+        "year": "2021",
+        "caption": "Spirograph animator is a re-tooling of the original Spirograph toy from 1965. The project reimagines the drawing toy as a generative tool for animation, combining frames from various spirograph settings into patterns of movement that present the unique geometric forms in a new light. In the spirit of the original Spirograph, the animator allows for experimentation and discovery in the form of a playful web-based interface.",
+        "tags": ["web", "tool", "generative", "motion", "interaction", "interface"],
+        "images": ["https://zscheinfeld.github.io/Spirograph/"],
         "column": "1",
-        "link":[]
+        "link":["<a href=`https://zscheinfeld.github.io/Spirograph/` target=`_blank`>Spirograph Website</a>"]
           
     },
 
@@ -269,6 +269,21 @@
         "images": ["img/21/1.gif", "img/21/2.gif"],
         "column": "3",
         "link":[] 
+    },
+
+    {
+        "item": "22",
+        "name": "Wonderfully Creepy",
+        "image": "img/cover/22.jpg",
+        "year": "2020",
+        "caption": "New media are so powerful because they mess with the distinction between publicity and privacy, gossip and political speech, surveillance and entertainment, intimacy and work, hype and reality. New media are wonderfully creepy. They are endlessly fascinating yet boring, addictive yet revolting, banal yet revolutionary.`These dichotomies, described in the introduction of Updating to Remain the Same by Wendy Hui Kyong Chun, inspired my project, Wonderfully Creepy: Notes From Two Star-Crossed Corners of the Internet. The project is a collection of essays and artworks in conversation with Chun’s analysis of new media.",
+        "tags": ["book", "print", "typography", "publication"],
+        "images": ["img/22/1.jpg", "img/22/2.jpg", "img/22/3.jpg", "img/22/4.jpg", "img/22/5.jpg", "img/22/6.jpg", "img/22/7.jpg"],
+        "column": "1",
+        "link":[]
+          
     }
+
+
 
 ]

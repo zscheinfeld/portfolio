@@ -670,6 +670,12 @@ body{
         display: none;
     }
 
+    .tag{
+        display: none;
+    }
+
+    
+
     .columnitem{
         font-family: 'Inter', sans-serif;
         line-height: 140%;
