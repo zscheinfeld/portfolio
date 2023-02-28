@@ -23,7 +23,7 @@
         "tags": ["interface","interaction", "3d", "web", "motion"],
         "column": "2",
         "images":["img/2/1.gif", "img/2/2.png", "img/2/3.jpg","img/2/4.png","img/2/5.gif","img/2/6.gif","img/2/7.mp4"],
-        "link":["<a href=`zscheinfeld.github.io/Pixelland/` target=`_blank` rel=`no-referrer`>Pixel Land Website</a>"]
+        "link":["<a href= 'https://zscheinfeld.github.io/Pixelland/' target='_blank' rel=`no-referrer`>Pixel Land Website</a>"]
     },
     {
         "item": "03",
@@ -34,7 +34,7 @@
         "advisors":"Bethany Johns, John Caserta, Ed Brown",
         "tags": ["interface","interaction", "3d", "web", "motion", "installation"],
         "images":["https://zscheinfeld.github.io/inboxpoems/wondering/index.html", "https://player.vimeo.com/video/746675405?h=db3fa76d07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/3/1.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
-        "link":["<a href=`zscheinfeld.github.io/inboxpoems/` target=`_blank` rel=`no-referrer` >Inbox Interpreter Website</a>"],
+        "link":["<a 'https://zscheinfeld.github.io/inboxpoems/' target=`_blank` rel=`no-referrer` >Inbox Interpreter Website</a>"],
         "column": "3"
        
         
@@ -243,7 +243,7 @@
         "tags": ["web", "tool", "generative", "motion", "interaction", "interface"],
         "images": ["https://zscheinfeld.github.io/Spirograph/"],
         "column": "1",
-        "link":["<a href=`zscheinfeld.github.io/Spirograph/` target=`_blank` rel='no-referrer'>Spirograph Website</a>" ]
+        "link":["<a href= 'https://zscheinfeld.github.io/Spirograph/' target=`_blank` rel='no-referrer'>Spirograph Website</a>" ]
           
     },
 
