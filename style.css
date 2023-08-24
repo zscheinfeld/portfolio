@@ -605,6 +605,14 @@ body{
     cursor: none;
 }
 
+a{
+
+    text-decoration: none;
+    background-color: transparent;
+    color:black;
+    
+    }
+
 @media screen and (max-width:720px) {
 
     .bgspace{
@@ -700,6 +708,7 @@ body{
         background-color: #68FF80;
         font-weight: 500
     }
+    
 
     .bggrid2{
         overflow-y: hidden;
