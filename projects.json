@@ -180,7 +180,7 @@
         "year": "2021",
         "caption": "Degrees of Uncertainty is a collaborative public art project with University of Rhode Island climate scientist Basia Marcks that visualizes the natural rhythm of Earth’s climate in the form of immersive projection installations. Our work takes time series data based on marine sediments and translates parameters like temperature and rate of climate change into visual qualities like color and movement. We started the project through the Vis-A-Thon program organized by the Edna W. Lawrence Nature Lab at RISD, and have continued with the support of the National Science Foundation through the Collaborative Visualization Grant.",
         "tags": ["projection", "interaction", "generative", "data", "installation"],
-        "images": ["https://player.vimeo.com/video/530872869?h=9e271cd750&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/14/2.jpg", "img/14/3.jpg", "img/14/4.jpg", "img/14/5.jpg", "data"],
+        "images": ["https://player.vimeo.com/video/530872869?h=9e271cd750&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/14/2.jpg", "img/14/3.jpg", "img/14/4.jpg", "img/14/5.jpg"],
         "column": "2",
         "link":[] 
     },
