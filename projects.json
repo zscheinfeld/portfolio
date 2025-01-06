@@ -99,7 +99,7 @@
         "advisors":"Bethany Johns",
         "tags": ["print", "book"],
         "column": "2",
-        "images":["img/25/1.png", "img/25/2.png", "img/25/3.png", "img/25/4.png", "img/25/5.png", "img/25/6.png","img/25/7.png","https://www.youtube.com/embed/f8nCFGdSIUU?si=pkEEtbIsKI3cJlU3&amp"],
+        "images":["img/25/1.png", "img/25/2.png", "img/25/3.png", "img/25/4.png", "img/25/5.png", "img/25/6.png","img/25/8.jpg", "img/25/9.jpg","img/25/10.jpg","img/25/11.jpg","img/25/12.jpg","img/25/7.png","https://www.youtube.com/embed/f8nCFGdSIUU?si=pkEEtbIsKI3cJlU3&amp"],
         "link":["<a href='https://digitalcommons.risd.edu/masterstheses/1096/' target='_blank' rel='no-referrer'>Digital Edition</a>"]
     },
     
@@ -112,7 +112,7 @@
         "caption": "Falling Elements is a version of a falling sand game, a genre of computer games that contains components for users to create unique simulated environments. Each element has its own action that comes from a simple rule. For instance, sand will travel down or diagonal. Water goes down, diagonal, or side to side. By providing a toolkit of simple behaviors, the game allows for users to create complex and unexpected simulations, providing the opportunity to not only act as a player, but also a game maker and storyteller.",
         "tags": ["interface","interaction", "web" , "motion", "game"],
         "column": "3",
-        "images":["img/4/1.mp4"],
+        "images":["img/4/1.mp4","img/4/1.jpg","img/4/2.jpg"],
         "link":[]
     },
     
