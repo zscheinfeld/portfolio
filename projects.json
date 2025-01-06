@@ -1,59 +1,20 @@
 [
+
     {
         "item": "01",
-        "name": "Crank to Scroll",
-        "image": "img/cover/1.jpg",
+        "name": "Radical Modernism",
+        "image": "img/cover/9.jpg",
         "year": "2021",
-        "caption": "Scroll Crank is a speculative design project that  transforms the passive action of scrolling with a typical computer mouse wheel into a more active and mindful experience. In gripping the device base, turning the crank, and hearing the clunky gears churn, the user’s attention is directed back to their own body while using a tool that typically has a dissociating, disembodying effect.",
-        "advisors":"Bethany Johns, John Caserta, Ed Brown",
-        "tags": ["interface","interaction", "3d", "web"],
+        "caption": "Radical Modernism is a mini publication that showcases the work of American designer Dan Friedman (1945-1995), and Italian architecture firm Superstudio (1960s). The book explores Friedman’s idea of “working outside of the margins.” I wrote a small introduction essay that is included throughout the project documentation below.",
+        "advisors":"Doug Scott",
+        "images":["img/9/1.jpg","img/9/2.jpg","img/9/3.jpg", "img/9/4.jpg", "img/9/5.jpg"],
+        "tags": ["book","publication", "typography"],
         "column": "1",
-        "images":["img/1/1.jpg","img/1/2.jpg", "img/1/3.gif" ],
-        "link":[]
-        
-    },
-
+        "link":[""]
+    }, 
+    
     {
         "item": "02",
-        "name": "Pixel Land",
-        "image": "img/cover/2.gif",
-        "year": "2021",
-        "caption": "A variable typeface that explores the possibility of conveying depth through letterforms. The project culminated in a web-based type specimen that uses the rotating letterforms as characters in an illustrated retelling of Edwin Abbott Abbott's Flatland.",
-        "advisors":"Bethany Johns, John Caserta, Ed Brown",
-        "tags": ["interface","interaction", "3d", "web", "motion"],
-        "column": "2",
-        "images":["img/2/1.gif", "img/2/2.png", "img/2/3.jpg","img/2/4.png","img/2/5.gif","img/2/6.gif","img/2/7.mp4"],
-        "link":["<a href= 'https://zscheinfeld.github.io/Pixelland/' target='_blank' rel='no-referrer'>Pixel Land Website</a>"]
-    },
-    {
-        "item": "03",
-        "name": "Inbox Interpreter",
-        "image": "img/cover/3.jpg",
-        "year": "2022",
-        "caption": "Inbox interpreter is a network of websites that re-designs the interface of a typical email inbox. The system takes content that is usually anxiety inducing, and transforms it into a whimsical interface consisting of five websites spanning across ten monitors. Each phase of the network highlights a fragment of my inbox, and produces an animation or click interaction that recontextualizes the email’s language. The work was installed as a physical installation in the form of a circle, giving users the opportunity to take a slow walk around my email.",
-        "advisors":"Bethany Johns, John Caserta, Ed Brown",
-        "tags": ["interface","interaction", "3d", "web", "motion", "installation", "data"],
-        "images":["https://zscheinfeld.github.io/inboxpoems/wondering/index.html", "https://player.vimeo.com/video/746675405?h=db3fa76d07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/3/1.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
-        "link":["<a href='https://zscheinfeld.github.io/inboxpoems/' target='_blank' rel='no-referrer'>Inbox Interpreter Website</a>"],
-        "column": "3"
-       
-        
-    },
-
-    {
-        "item": "04",
-        "name": "Falling Elements",
-        "image": "img/cover/4.gif",
-        "year": "2022",
-        "caption": "Falling Elements is a version of a falling sand game, a genre of computer games that contains components for users to create unique simulated environments. Each element has its own action that comes from a simple rule. For instance, sand will travel down or diagonal. Water goes down, diagonal, or side to side. By providing a toolkit of simple behaviors, the game allows for users to create complex and unexpected simulations, providing the opportunity to not only act as a player, but also a game maker and storyteller.",
-        "tags": ["interface","interaction", "web" , "motion", "game"],
-        "column": "1",
-        "images":["img/4/1.mp4"],
-        "link":[]
-          
-    },
-    {
-        "item": "05",
         "name": "Albula Railway",
         "image": "img/cover/5.jpg",
         "year": "2021",
@@ -62,40 +23,302 @@
         "images":["img/5/1.jpg", "img/5/2.jpg" , "img/5/3.jpg" , "img/5/4.jpg", "img/5/5.jpg","img/5/6.jpg","img/5/7.mp4"],
         "tags": ["identity","print", "typography", "publication"],
         "column": "2",
+        "link":[]     
+    },
+    
+    {
+        "item": "03",
+        "name": "MFA Identity",
+        "image": "img/cover/23.gif",
+        "year": "2023",
+        "caption": "An Identity for the 2023 RISD grad show, where my collaborator Serena Ho and I highlighted the wide range of work, thoughts, and lived experiences among the graduating grad class. We asked our classmates to complete a survey that included questions like: “What tools are you working with?”, “What have you been thinking about?” and “What are you reading?”,  and used this content to create an interactive homepage that users can click through to explore the responses. The print identity and motion poster are an extension of the wide range of experiences and ideas that came through in the answers.",
+        "tags": ["identity", "print", "typography", "motion", "web", "data"],
+        "images": ["img/23/1.mp4","img/23/2.mp4","img/23/3.mp4","img/23/4.png","img/23/5.png","img/23/6.png","img/23/7.png","img/23/8.png"],
+        "column": "3",
+        "link":[]
+          
+    },
+    
+    {
+        "item": "04",
+        "name": "Inbox Interpreter",
+        "image": "img/cover/3.png",
+        "year": "2022",
+        "caption": "Inbox interpreter is a network of websites that re-designs the interface of a typical email inbox. The system takes content that is usually anxiety inducing, and transforms it into a whimsical interface consisting of five websites spanning across ten monitors. Each phase of the network highlights a fragment of my inbox, and produces an animation or click interaction that recontextualizes the email’s language. The work was installed as a physical installation in the form of a circle, giving users the opportunity to take a slow walk around my email.",
+        "advisors":"Bethany Johns, John Caserta, Ed Brown",
+        "tags": ["interface","interaction", "3d", "web", "motion", "installation"],
+        "images":["https://zscheinfeld.github.io/inboxpoems/wondering/index.html", "https://player.vimeo.com/video/746675405?h=db3fa76d07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/3/1.gif", "img/3/3.jpg", "img/3/4.jpg", "img/3/5.jpg", "img/3/6.jpg", "img/3/7.jpg", "img/3/8.jpg","img/3/9.jpg"],
+        "link":["<a href='https://zscheinfeld.github.io/inboxpoems/' target='_blank' rel='no-referrer'>Inbox Interpreter Website</a>"],
+        "column": "1"
+    },
+    
+    {
+        "item": "05",
+        "name": "Language Time",
+        "image": "img/cover/10.jpg",
+        "year": "2022",
+        "caption": "Language Time is a collaborative compendium created by masters students in Digital + Media at the Rhode Island School of Design about their studio practices. The book uses a color coding system to create a unique section for each artist, but also reflects the synergetic nature of the work in moments like the RISO printed gradient shown on the cover. The project was commisioned through the course 'Critical Theory + Artistic Research in Context at RISD (Spring 2022)",
+        "tags": ["book","publication", "typography", "print"],
+        "images": ["img/10/1.jpg", "img/10/2.jpg", "img/10/3.jpg", "img/10/4.jpg", "img/10/5.jpg", "img/10/6.jpg", "img/10/7.jpg"],
+        "column": "2",
         "link":[]
           
     },
     
     {
         "item": "06",
+        "name": "Field Guide to the Providence River",
+        "image": "img/cover/16.jpg",
+        "year": "2022",
+        "caption": "Field guide to the Providence River is a collection of found objects and printed ephemera that archives the river as a meeting point between land, water, nature and people. The project asks questions about the significance of an urban beach and the interplay between the remaining pieces of a once thriving and essential marshland.",
+        "tags": ["print", "publication", "book", "data"],
+        "images": ["img/16/1.jpg", "img/16/2.jpg", "img/16/3.jpg", "img/16/4.jpg", "img/16/5.jpg", "img/16/6.jpg"],
+        "column": "3",
+        "link":[] 
+    },
+    
+    {
+        "item": "07",
         "name": "System for a System",
         "image": "img/cover/6.gif",
         "year": "2021",
         "caption": "System for a System is a living database of terms, influences, historical references, ideas and projects related to my graduate thesis research. The site uses a data visualization library to create a flexible network that can be manipulated and reshuffled to tell the story of my research in a flexible and non-linear way.",
         "advisors":"Doug Scott",
-        "tags": ["interface","interaction", "web", "motion", "network", "data"],
+        "tags": ["interface","interaction", "web", "motion", "network"],
         "images":["img/6/1.mp4", "img/6/2.mp4"],
+        "column": "1",
+        "link":[]   
+    }, 
+    
+    {
+        "item": "08",
+        "name": "Input Output",
+        "image": "img/cover/252.jpg",
+        "year": "2023",
+        "caption": "Masters thesis book in graphic design made at RISD documenting a series of projects I made in grad school. The book, called 'Input/Output', emphasizes the processes and systems that create engagement, narrative, and meaning in graphic design as opposed to singular inputs and outputs.",
+        "advisors":"Bethany Johns",
+        "tags": ["print", "book"],
+        "column": "2",
+        "images":["img/25/1.png", "img/25/2.png", "img/25/3.png", "img/25/4.png", "img/25/5.png", "img/25/6.png","img/25/7.png","https://www.youtube.com/embed/f8nCFGdSIUU?si=pkEEtbIsKI3cJlU3&amp"],
+        "link":["<a href='https://digitalcommons.risd.edu/masterstheses/1096/' target='_blank' rel='no-referrer'>Digital Edition</a>"]
+    },
+    
+    
+    {
+        "item": "09",
+        "name": "Falling Elements",
+        "image": "img/cover/4.gif",
+        "year": "2022",
+        "caption": "Falling Elements is a version of a falling sand game, a genre of computer games that contains components for users to create unique simulated environments. Each element has its own action that comes from a simple rule. For instance, sand will travel down or diagonal. Water goes down, diagonal, or side to side. By providing a toolkit of simple behaviors, the game allows for users to create complex and unexpected simulations, providing the opportunity to not only act as a player, but also a game maker and storyteller.",
+        "tags": ["interface","interaction", "web" , "motion", "game"],
         "column": "3",
+        "images":["img/4/1.mp4"],
+        "link":[]
+    },
+    
+    
+    {
+        "item": "10",
+        "name": "Tokyo Olympics",
+        "image": "img/cover/18.jpg",
+        "year": "2021",
+        "caption": "I created a poster to make sense of the chaotic and unorganized daily schedule for athletes at the 2020 Tokyo Olympics. To make the information clear and accessible for athletes, I used the familiar track-like oval form as a structure to center the most important information: the event time and travel distance from the Olympic Village.",
+        "tags": ["print", "data", "typography"],
+        "images": ["img/18/1.jpg", "img/18/2.jpg", "img/18/3.jpg", "img/18/4.jpg"],
+        "column": "1",
+        "link":[]   
+    }, 
+    
+    {
+        "item": "11",
+        "name": "Variational",
+        "image": "img/cover/28.jpg",
+        "year": "2023",
+        "caption": "Brand identity, motion design, website, and product design for Variational, a crypto trading platform backed by Coinbase and other top VC firms. This work was made in collaboration with Studio Rodrigo and Cold Cuts under the creative direction of Ritik Dholakia. ",
+        "tags": ["identity","web", "product", "motion"],
+        "images": ["img/28/1.mp4","img/28/2.mp4", "img/28/3.mp4", "img/28/4.mp4" ],
+        "column": "2",
+        "link":[]
+    },
+    
+    {
+        "item": "12",
+        "name": "Crank to Scroll",
+        "image": "img/cover/1.jpg",
+        "year": "2021",
+        "caption": "Scroll Crank is a speculative design project that  transforms the passive action of scrolling with a typical computer mouse wheel into a more active and mindful experience. In gripping the device base, turning the crank, and hearing the clunky gears churn, the user’s attention is directed back to their own body while using a tool that typically has a dissociating, disembodying effect.",
+        "advisors":"Bethany Johns, John Caserta, Ed Brown",
+        "tags": ["interface","interaction", "3d", "web"],
+        "column": "3",
+        "images":["img/1/1.jpg","img/1/2.jpg", "img/1/3.gif" ],
+        "link":[]
+        
+    },
+    
+    {
+        "item": "13",
+        "name": "Drawing Programs",
+        "image": "img/cover/29.gif",
+        "year": "2024",
+        "caption": "Ongoing series of interactive creative coding sketches made with P5.js, Jquery, and a combination of animation software including Cinema 4d and After Effects.",
+        "tags": ["interface","interaction", "3d", "web"],
+        "column": "1",
+        "images":["img/155/1.mp4","img/155/2.mp4", "img/155/3.mp4" , "img/155/4.mp4"],
+        "link":["<a href='https://www.are.na/zach-scheinfeld/drawing-programs' target='_blank' rel='no-referrer'>Drawing Programs are.na archive</a>"]
+        
+    },
+    
+    {
+        "item": "14",
+        "name": "Block Party",
+        "image": "img/cover/11.jpg",
+        "year": "2022",
+        "caption": "Block party is a module typeface inspired by Giulio da Milano’s 1933 typeface Fregio Mecano. The original typeface was a kit of letterpress components that could be combined to create countless iterations of each letterform. In this revival, I extrude the forms into three dimensional blocks that designers can play, manipulate, and create with. The kit comes with blocks made out of varying materials meant to be combined and experimented on.",
+        "tags": ["3d", "typography", "interaction", "sculpture"],
+        "images": ["img/11/1.jpg", "img/11/3.mp4", "img/11/2.mp4","img/11/3.jpg","img/11/4.jpg","img/11/5.jpg"],
+        "column": "2",
         "link":[]
           
-    }, 
-
+    },
+    
     {
-        "item": "07",
-        "name": "Stereocard Plates",
-        "image": "img/cover/7.jpg",
+        "item": "15",
+        "name": "Fora",
+        "image": "img/cover/13.gif",
         "year": "2021",
-        "caption": "Stereocard Plates uses stereocards from the Providence Public Library Special Collections as source materials to experiment combining antiquated photographic technology with contemporary computer vision and digital fabrication equipment. In filtering 19th century imagery through modern scanners, image stitching algorithms, UV printers, pen plotters, and laser engravers, the plates contain traces of technology from various industrial eras, referencing the rapid evolution society has experieced in capturing and archiving imagery over the past 200 years.",
-        "advisors":"Bethany Johns, John Caserta",
-        "tags": ["fabrication","photography"],
-        "images":["img/7/1.jpg","img/7/2.jpg","img/7/3.jpg","img/7/4.jpg","img/7/5.jpg","img/7/6.jpg"],
+        "caption": "Along with the team at Studio Rodrigo in Brooklyn, NY, I designed a minimum viable product for Fora Travel, a startup that connects travel entrepreneurs with clients. The design intentionally invokes Fora’s proactively inclusive, data-driven platform, highlighting the luxury nature of their business, while still coming across as accessible.",
+        "tags": ["web","interface", "mobile", "product", "UX","identity"],
+        "images": ["img/13/1.jpg","img/13/2.jpg","img/13/3.jpg", "img/13/4.jpg", "img/13/5.jpg", "img/13/6.jpg"],
+        "column": "3",
+        "link":[] 
+    },
+    
+    
+    {
+        "item": "16",
+        "name": "Spiral Flight",
+        "image": "img/cover/15.jpg",
+        "year": "2021",
+        "caption": "Degrees of Uncertainty is a collaborative public art project with University of Rhode Island climate scientist Basia Marcks that visualizes the natural rhythm of Earth’s climate in the form of immersive projection installations. Our work takes time series data based on marine sediments and translates parameters like temperature and rate of climate change into visual qualities like color and movement. We started the project through the Vis-A-Thon program organized by the Edna W. Lawrence Nature Lab at RISD, and have continued with the support of the National Science Foundation through the Collaborative Visualization Grant.",
+        "tags": ["projection", "interaction", "generative", "data", "installation"],
+        "images": ["https://player.vimeo.com/video/530872869?h=9e271cd750&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/14/2.jpg", "img/14/3.jpg", "img/14/4.jpg", "img/14/5.jpg"],
+        "column": "1",
+        "link":[] 
+    },
+    
+    
+    {
+        "item": "17",
+        "name": "Extra Special Day",
+        "image": "img/cover/30.gif",
+        "year": "2024",
+        "caption": ["June 2nd was an extra special day, when I got married surrounded by friends, family, and loved ones. It was especially meaningful to design colorful collateral, signage, a website, party favors, and more to mark the occasion."],
+        "tags": ["print", "identity", "typography", "web"],
+        "images": ["img/30/1.mp4","img/30/2.mp4","img/30/3.mp4","img/30/2.jpg","img/30/3.jpg","img/30/4.jpg","img/30/5.jpg"],
+        "column": "2",
+        "link":[]   
+    },
+    
+    {
+        "item": "18",
+        "name": "Spirograph Retooling",
+        "image": "img/cover/19.gif",
+        "year": "2021",
+        "caption": "Spirograph animator is a re-tooling of the original Spirograph toy from 1965. The project reimagines the drawing toy as a generative tool for animation, combining frames from various spirograph settings into patterns of movement that present the unique geometric forms in a new light. In the spirit of the original Spirograph, the animator allows for experimentation and discovery in the form of a playful web-based interface.",
+        "tags": ["web", "tool", "generative", "motion", "interaction", "interface"],
+        "images": ["https://zscheinfeld.github.io/Spirograph/"],
+        "column": "3",
+        "link":["<a href= 'https://zscheinfeld.github.io/Spirograph/' target='_blank' rel='no-referrer'>Spirograph Website</a>" ]
+    },
+    {
+        "item": "19",
+        "name": "Mainfactor",
+        "image": "img/cover/12.jpg",
+        "year": "2022",
+        "caption": "Along with the team at Studio Rodrigo in Brooklyn, NY, I designed a marketing splash page for Mainfactor, an e-commerce business. The goal for the site is to emphasize Mainfactor’s unique capabilities with a bold, creative design that mirrors their position as an industry disruptor.",
+        "tags": ["web","interface", "mobile", "product", "UX"],
+        "images": ["img/12/1.jpg", "img/12/2.mp4", "img/12/3.gif", "img/12/4.jpg", "img/12/5.jpg"],
         "column": "1",
         "link":[]
           
     },
-
+    
     {
-        "item": "08",
+        "item": "20",
+        "name": "Poster Practice",
+        "image": "img/cover/17.jpg",
+        "year": "2022",
+        "caption": "An archive of daily poster creations made over a two week period in Spring 2022. Each poster was designed following a set of randomly combined rules for generating content, aesthetic style, and composition. I packaged the results in a publication, highlighting the breadth of formal studies through a range of page sizes, printing methods, and materials.",
+        "tags": ["printmaking", "publication", "print"],
+        "images": ["img/17/1.jpg","img/17/2.jpg","img/17/3.jpg","img/17/4.jpg","img/17/5.jpg","img/17/6.jpg","img/17/7.jpg", "img/17/8.jpg"],
+        "column": "2",
+        "link":[] 
+    },
+    
+    {
+        "item": "21",
+        "name": "Pixel Land",
+        "image": "img/cover/2.gif",
+        "year": "2021",
+        "caption": "A variable typeface that explores the possibility of conveying depth through letterforms. The project culminated in a web-based type specimen that uses the rotating letterforms as characters in an illustrated retelling of Edwin Abbott Abbott's Flatland.",
+        "advisors":"Bethany Johns, John Caserta, Ed Brown",
+        "tags": ["interface","interaction", "3d", "web", "motion"],
+        "column": "3",
+        "images":["img/2/1.gif", "img/2/2.png", "img/2/3.jpg","img/2/4.png","img/2/5.gif","img/2/6.gif","img/2/7.mp4"],
+        "link":["<a href= 'https://zscheinfeld.github.io/Pixelland/' target='_blank' rel='no-referrer'>Pixel Land Website</a>"]
+    },
+    
+    {
+        "item": "22",
+        "name": "Daylight Savings",
+        "image": "img/cover/22.png",
+        "year": "2022",
+        "caption": "Poster specimen for a modified open-source typeface using a custom alternate character set to announce daylight savings in Rhode Island. Each poster was hand-pulled screen printed on paper. ",
+        "advisors":"",
+        "tags": ["print", "printmaking"],
+        "column": "1",
+        "images":["img/22/1.png", "img/22/2.png","img/22/3.png"],
+        "link":["<a href= 'https://zscheinfeld.github.io/Pixelland/' target='_blank' rel='no-referrer'>Pixel Land Website</a>"]
+    },
+    
+    {
+        "item": "23",
+        "name": "Screen Protector",
+        "image": "img/cover/21.gif",
+        "year": "2022",
+        "caption": "Screen protector takes inspiration from visual filters native to common design software. These filters, including the Gaussian blur and Perlin noise, are meant to emulate nature but are often derived from mathematical thinking. As a response, screen protector attempts to create a series of organic lenses that allows a user to observe the properties of light refracting through warped, transparent surfaces. This work offers a possible alternative to computer generated graphics as they are typically created and experienced.",
+        "tags": ["3d", "interaction", "interface"],
+        "images": ["img/21/1.gif", "img/21/2.gif"],
+        "column": "2",
+        "link":[] 
+    },
+    
+    {
+        "item": "24",
+        "name": "Wonderfully Creepy",
+        "image": "img/cover/24.jpg",
+        "year": "2020",
+        "caption": "New media are so powerful because they mess with the distinction between publicity and privacy, gossip and political speech, surveillance and entertainment, intimacy and work, hype and reality. New media are wonderfully creepy. They are endlessly fascinating yet boring, addictive yet revolting, banal yet revolutionary.`These dichotomies, described in the introduction of Updating to Remain the Same by Wendy Hui Kyong Chun, inspired my project, Wonderfully Creepy: Notes From Two Star-Crossed Corners of the Internet. The project is a collection of essays and artworks in conversation with Chun’s analysis of new media.",
+        "tags": ["book", "print", "typography", "publication"],
+        "images": ["img/24/1.jpg", "img/24/2.jpg", "img/24/3.jpg", "img/24/4.jpg", "img/24/5.jpg", "img/24/6.jpg", "img/24/7.jpg"],
+        "column": "3",
+        "link":[]
+    },
+    
+    {
+        "item": "25",
+        "name": "down, where they walk",
+        "image": "img/cover/20.jpg",
+        "year": "2021",
+        "caption": "'down where they walk', my senior thesis project in printmaking at Wesleyan, employs wood-block printing and etching techniques to form compositions of various landscape elements and textures, exploring themes around human interaction with nature and isolation. The work includes ten prints at 48”x24”. It also features a large-scale installation that immerses the viewer in a horizon-line formed by ten hanging rolls of paper, some up to 20-feet long, drawing a playful correlation between gallery-goers and the tiny figures in the prints.",
+        "tags": ["print", "printmaking"],
+        "images": ["img/20/1.jpg", "img/20/2.jpg", "img/20/3.jpg", "img/20/4.jpg", "img/20/5.jpg", "img/20/6.jpg", "img/20/7.jpg", "img/20/8.jpg", "img/20/9.jpg"],
+        "column": "1",
+        "link":[]   
+    },
+    
+    {
+        "item": "26",
         "name": "break;",
         "image": "img/cover/8.jpg",
         "year": "2022",
@@ -106,184 +329,41 @@
         "link":[]
           
     },
-
+    
     {
-        "item": "09",
-        "name": "Radical Modernism",
-        "image": "img/cover/9.jpg",
+        "item": "27",
+        "name": "Stereocard Plates",
+        "image": "img/cover/7.jpg",
         "year": "2021",
-        "caption": "Radical Modernism is a mini publication that showcases the work of American designer Dan Friedman (1945-1995), and Italian architecture firm Superstudio (1960s). The book explores Friedman’s idea of “working outside of the margins.” I wrote a small introduction essay that is included throughout the project documentation below.",
-        "advisors":"Doug Scott",
-        "images":["img/9/1.jpg","img/9/2.jpg","img/9/3.jpg", "img/9/4.jpg", "img/9/5.jpg"],
-        "tags": ["book","publication", "typography"],
+        "caption": "Stereocard Plates uses stereocards from the Providence Public Library Special Collections as source materials to experiment combining antiquated photographic technology with contemporary computer vision and digital fabrication equipment. In filtering 19th century imagery through modern scanners, image stitching algorithms, UV printers, pen plotters, and laser engravers, the plates contain traces of technology from various industrial eras, referencing the rapid evolution society has experieced in capturing and archiving imagery over the past 200 years.",
+        "advisors":"Bethany Johns, John Caserta",
+        "tags": ["fabrication","photography"],
+        "images":["img/7/1.jpg","img/7/2.jpg","img/7/3.jpg","img/7/4.jpg","img/7/5.jpg","img/7/6.jpg"],
         "column": "3",
-        "link":[]
-          
-    }, 
-
-    {
-        "item": "10",
-        "name": "Language Time",
-        "image": "img/cover/10.jpg",
-        "year": "2022",
-        "caption": "Language Time is a collaborative compendium created by masters students in Digital + Media at the Rhode Island School of Design about their studio practices. The book uses a color coding system to create a unique section for each artist, but also reflects the synergetic nature of the work in moments like the RISO printed gradient shown on the cover. The project was commisioned through the course 'Critical Theory + Artistic Research in Context at RISD (Spring 2022)",
-        "tags": ["book","publication", "typography", "print"],
-        "images": ["img/10/1.jpg", "img/10/2.jpg", "img/10/3.jpg", "img/10/4.jpg", "img/10/5.jpg", "img/10/6.jpg", "img/10/7.jpg"],
-        "column": "1",
-        "link":[]
-          
-    },
-
-    {
-        "item": "11",
-        "name": "Block Party",
-        "image": "img/cover/11.jpg",
-        "year": "2022",
-        "caption": "Block party is a module typeface inspired by Giulio da Milano’s 1933 typeface Fregio Mecano. The original typeface was a kit of letterpress components that could be combined to create countless iterations of each letterform. In this revival, I extrude the forms into three dimensional blocks that designers can play, manipulate, and create with. The kit comes with blocks made out of varying materials meant to be combined and experimented on.",
-        "tags": ["3d", "typography", "interaction", "sculpture"],
-        "images": ["img/11/1.jpg", "img/11/2.mp4", "img/11/3.jpg"],
-        "column": "2",
-        "link":[]
-          
-    },
-
-
-    {
-        "item": "12",
-        "name": "Mainfactor",
-        "image": "img/cover/12.jpg",
-        "year": "2022",
-        "caption": "Along with the team at Studio Rodrigo in Brooklyn, NY, I designed a marketing splash page for Mainfactor, an e-commerce business. The goal for the site is to emphasize Mainfactor’s unique capabilities with a bold, creative design that mirrors their position as an industry disruptor.",
-        "tags": ["web","interface", "mobile", "product", "UX"],
-        "images": ["img/12/1.jpg", "img/12/2.mp4", "img/12/3.gif", "img/12/4.jpg", "img/12/5.jpg"],
-        "column": "3",
-        "link":[]
-          
-    },
-
-    {
-        "item": "13",
-        "name": "Fora",
-        "image": "img/cover/13.gif",
-        "year": "2021",
-        "caption": "Along with the team at Studio Rodrigo in Brooklyn, NY, I designed a minimum viable product for Fora Travel, a startup that connects travel entrepreneurs with clients. The design intentionally invokes Fora’s proactively inclusive, data-driven platform, highlighting the luxury nature of their business, while still coming across as accessible.",
-        "tags": ["web","interface", "mobile", "product", "UX","identity"],
-        "images": ["img/13/1.jpg","img/13/2.jpg","img/13/3.jpg", "img/13/4.jpg", "img/13/5.jpg", "img/13/6.jpg"],
-        "column": "1",
-        "link":[] 
-    },
-
-    {
-        "item": "14",
-        "name": "Degrees of Uncertainty",
-        "image": "img/cover/14.jpg",
-        "year": "2021",
-        "caption": "Degrees of Uncertainty is a collaborative public art project with University of Rhode Island climate scientist Basia Marcks that visualizes the natural rhythm of Earth’s climate in the form of immersive projection installations. Our work takes time series data based on marine sediments and translates parameters like temperature and rate of climate change into visual qualities like color and movement. We started the project through the Vis-A-Thon program organized by the Edna W. Lawrence Nature Lab at RISD, and have continued with the support of the National Science Foundation through the Collaborative Visualization Grant.",
-        "tags": ["projection", "interaction", "generative", "data", "installation"],
-        "images": ["https://player.vimeo.com/video/530872869?h=9e271cd750&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", "img/14/2.jpg", "img/14/3.jpg", "img/14/4.jpg", "img/14/5.jpg"],
-        "column": "2",
-        "link":[] 
-    },
-
-    {
-        "item": "15",
-        "name": "Spiral Flight",
-        "image": "img/cover/15.jpg",
-        "year": "2021",
-        "caption": "“Spiral Flight” utilizes a photosphere image capturing tool, which is typically used to document vast public places, and applies it to the confined spaces of urban alleyway staircases. The resulting sculpture investigates the tension between the visual qualities of place-based objects and the output of the technology we use to capture them.",
-        "tags": ["3d", "installation"],
-        "images": ["img/15/1.jpg", "img/15/2.jpg", "img/15/3.jpg", "img/15/4.jpg", "img/15/5.jpg", "img/15/6.jpg"],
-        "column": "3",
-        "link":[]
-          
-    },
-
-    {
-        "item": "16",
-        "name": "Field Guide to the Providence River",
-        "image": "img/cover/16.jpg",
-        "year": "2022",
-        "caption": "Field guide to the Providence River is a collection of found objects and printed ephemera that archives the river as a meeting point between land, water, nature and people. The project asks questions about the significance of an urban beach and the interplay between the remaining pieces of a once thriving and essential marshland.",
-        "tags": ["print", "publication", "book", "data"],
-        "images": ["img/16/1.jpg", "img/16/2.jpg", "img/16/3.jpg", "img/16/4.jpg", "img/16/5.jpg", "img/16/6.jpg"],
-        "column": "1",
-        "link":[] 
-    },
-
-    {
-        "item": "17",
-        "name": "Poster Practice",
-        "image": "img/cover/17.jpg",
-        "year": "2022",
-        "caption": "An archive of daily poster creations made over a two week period in Spring 2022. Each poster was designed following a set of randomly combined rules for generating content, aesthetic style, and composition. I packaged the results in a publication, highlighting the breadth of formal studies through a range of page sizes, printing methods, and materials.",
-        "tags": ["printmaking", "publication", "print"],
-        "images": ["img/17/1.jpg","img/17/2.jpg","img/17/3.jpg","img/17/4.jpg","img/17/5.jpg","img/17/6.jpg","img/17/7.jpg", "img/17/8.jpg"],
-        "column": "2",
-        "link":[] 
-    },
-
-    {
-        "item": "18",
-        "name": "Tokyo Olympics",
-        "image": "img/cover/18.jpg",
-        "year": "2021",
-        "caption": "I created a poster to make sense of the chaotic and unorganized daily schedule for athletes at the 2020 Tokyo Olympics. To make the information clear and accessible for athletes, I used the familiar track-like oval form as a structure to center the most important information: the event time and travel distance from the Olympic Village.",
-        "tags": ["print", "data", "typography"],
-        "images": ["img/18/1.jpg", "img/18/2.jpg", "img/18/3.jpg", "img/18/4.jpg"],
-        "column": "3",
-        "link":[]   
-    }, 
-
-    {
-        "item": "19",
-        "name": "Spirograph Retooling",
-        "image": "img/cover/19.gif",
-        "year": "2021",
-        "caption": "Spirograph animator is a re-tooling of the original Spirograph toy from 1965. The project reimagines the drawing toy as a generative tool for animation, combining frames from various spirograph settings into patterns of movement that present the unique geometric forms in a new light. In the spirit of the original Spirograph, the animator allows for experimentation and discovery in the form of a playful web-based interface.",
-        "tags": ["web", "tool", "generative", "motion", "interaction", "interface"],
-        "images": ["https://zscheinfeld.github.io/Spirograph/"],
-        "column": "1",
-        "link":["<a href= 'https://zscheinfeld.github.io/Spirograph/' target='_blank' rel='no-referrer'>Spirograph Website</a>" ]
-          
-    },
-
-    {
-        "item": "20",
-        "name": "down, where they walk",
-        "image": "img/cover/20.jpg",
-        "year": "2021",
-        "caption": "'down where they walk', my senior thesis project in printmaking at Wesleyan, employs wood-block printing and etching techniques to form compositions of various landscape elements and textures, exploring themes around human interaction with nature and isolation. The work includes ten prints at 48”x24”. It also features a large-scale installation that immerses the viewer in a horizon-line formed by ten hanging rolls of paper, some up to 20-feet long, drawing a playful correlation between gallery-goers and the tiny figures in the prints.",
-        "tags": ["print", "printmaking"],
-        "images": ["img/20/1.jpg", "img/20/2.jpg", "img/20/3.jpg", "img/20/4.jpg", "img/20/5.jpg", "img/20/6.jpg", "img/20/7.jpg", "img/20/8.jpg", "img/20/9.jpg"],
-        "column": "2",
-        "link":[]   
-    },
-
-    {
-        "item": "21",
-        "name": "Screen Protector",
-        "image": "img/cover/21.gif",
-        "year": "2022",
-        "caption": "Screen protector takes inspiration from visual filters native to common design software. These filters, including the Gaussian blur and Perlin noise, are meant to emulate nature but are often derived from mathematical thinking. As a response, screen protector attempts to create a series of organic lenses that allows a user to observe the properties of light refracting through warped, transparent surfaces. This work offers a possible alternative to computer generated graphics as they are typically created and experienced.",
-        "tags": ["3d", "interaction", "interface"],
-        "images": ["img/21/1.gif", "img/21/2.gif"],
-        "column": "3",
-        "link":[] 
-    },
-
-    {
-        "item": "22",
-        "name": "Wonderfully Creepy",
-        "image": "img/cover/22.jpg",
-        "year": "2020",
-        "caption": "New media are so powerful because they mess with the distinction between publicity and privacy, gossip and political speech, surveillance and entertainment, intimacy and work, hype and reality. New media are wonderfully creepy. They are endlessly fascinating yet boring, addictive yet revolting, banal yet revolutionary.`These dichotomies, described in the introduction of Updating to Remain the Same by Wendy Hui Kyong Chun, inspired my project, Wonderfully Creepy: Notes From Two Star-Crossed Corners of the Internet. The project is a collection of essays and artworks in conversation with Chun’s analysis of new media.",
-        "tags": ["book", "print", "typography", "publication"],
-        "images": ["img/22/1.jpg", "img/22/2.jpg", "img/22/3.jpg", "img/22/4.jpg", "img/22/5.jpg", "img/22/6.jpg", "img/22/7.jpg"],
-        "column": "1",
         "link":[]
           
     }
-
-
-
-]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]
